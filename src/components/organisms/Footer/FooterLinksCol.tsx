@@ -10,8 +10,11 @@ const FooterLinksCol: React.FC<FooterLinksColProps> = (
   props: FooterLinksColProps
 ) => {
   return (
-    <div className=" d-flex flex-column">
-      <div className=" text-success mb-3" style={{ fontWeight: "bold" }}>
+    <div className="links-col d-flex flex-column">
+      <div
+        className="links-col-title text-success mb-3"
+        style={{ fontWeight: "bold" }}
+      >
         {props.title}
       </div>
 

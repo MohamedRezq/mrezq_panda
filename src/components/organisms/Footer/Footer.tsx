@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-logo ">
           <LogoWrapper width="10vw" />
         </div>{" "}
-        <div className="d-flex flex-column flex-lg-row footer-links-container justify-content-between">
+        <div className="d-flex flex-column flex-lg-row footer-links-container justify-content-between my-4">
           <FooterLinksCol
             title={t("QUICK LINKS")}
             links={[

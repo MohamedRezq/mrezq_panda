@@ -1,6 +1,6 @@
 .header {
-  margin-left: 6%;
-  margin-right: 6%;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-top: 25px;
   margin-bottom: 25px;
   .langSwitcher {
@@ -11,5 +11,46 @@
     font-weight: bold;
     cursor: default;
   }
-  //font-family: "Avenir Next" !important;
+}
+
+.navLinks {
+  color: white;
+  font-weight: bolder;
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.overlayContainer {
+  width: 98vw;
+  background-color: #f1f8e9;
+  height: 70vh;
+  margin: auto;
+  margin-top: 15px;
+  padding-left: 90px;
+  padding-right: 90px;
+  display: flex;
+  align-items: center;
+  div {
+    width: 50%;
+  }
+  .links-col {
+    white-space: nowrap;
+    row-gap: 20px !important;
+    font-family: "Blogger Sans", sans-serif !important;
+    font-weight: 100;
+    justify-content: flex-start !important;
+    .links-col-title {
+      color: #014a2a !important;
+      font-size: 25px;
+    }
+    .footer-link {
+      font-size: 16px;
+    }
+    .footer-link:hover {
+      color: #70bc1f;
+    }
+  }
 }
