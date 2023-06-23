@@ -1,0 +1,29 @@
+.footer {
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-top: solid 6px;
+  .footer-logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer-links-container {
+    .footer-link {
+      font-family: "Roboto", sans-serif;
+      font-weight: 200;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+  }
+  @media (min-width: "1024px") {
+    .footer-links-container:lang(ar) {
+      flex-direction: row-reverse !important;
+    }
+  }
+  .dropdown button {
+    background-color: white !important;
+    border: none !important;
+    font-style: normal !important;
+  }
+}

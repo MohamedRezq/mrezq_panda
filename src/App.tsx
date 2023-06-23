@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+//-----> Pages <-------------------------------------------------//
+import { HomePage } from "./pages";
+//- END OF IMPORTS -----------------------------------------//
 
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    const langDetector = location.pathname.split("/")[1]; // "en" || "ar"
+    document
+      .getElementsByTagName("html")[0]
+      .setAttribute("lang", langDetector || "en");
+    i18n.changeLanguage(langDetector);
+  }, [location]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="*" element={<HomePage />} />
+      </Routes>
     </div>
   );
 }

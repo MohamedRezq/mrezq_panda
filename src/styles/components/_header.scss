@@ -1,0 +1,15 @@
+.header {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  .langSwitcher {
+    cursor: pointer;
+  }
+  .langSwitcher .active {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: default;
+  }
+  //font-family: "Avenir Next" !important;
+}
