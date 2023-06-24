@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HiArrowLongRight } from "react-icons/hi2";
+import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import { useTranslation } from "react-i18next";
 
 type InteractiveBtnProps = {
@@ -12,6 +12,16 @@ type InteractiveBtnProps = {
 
 const InteractiveBtn = (props: InteractiveBtnProps) => {
   const { t } = useTranslation();
+  const [langDetector, setLangDetector] = React.useState(
+    document.getElementsByTagName("html")[0].getAttribute("lang")
+  );
+  React.useEffect(() => {
+    const langDetector = document
+      .getElementsByTagName("html")[0]
+      .getAttribute("lang");
+    setLangDetector(langDetector);
+  }, []);
+
   const leaveStyle = {
     border: `solid 2px ${props.color || "success"}`,
     color: `${props.color || "success"}`,
@@ -38,7 +48,11 @@ const InteractiveBtn = (props: InteractiveBtnProps) => {
     >
       {t(props.text)}
       <div className="arrow-icon" style={{ paddingBottom: "2px" }}>
-        <HiArrowLongRight size={20} className="arrow-icon" />
+        {langDetector === "en" ? (
+          <HiArrowLongRight size={20} className="arrow-icon" />
+        ) : (
+          <HiArrowLongLeft size={20} className="arrow-icon" />
+        )}
       </div>
     </Link>
   );

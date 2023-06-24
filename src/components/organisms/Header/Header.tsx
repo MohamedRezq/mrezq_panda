@@ -34,7 +34,7 @@ const Header = () => {
   }, []);
 
   return (
-    <>
+    <div className="d-none d-lg-block">
       <div className="header d-flex justify-content-between align-items-center">
         <LogoWrapper width="11vw" />
         <div className="d-flex justify-content-center align-items-center gap-4">
@@ -59,7 +59,7 @@ const Header = () => {
         className="navLinks bg-success mt-2 d-flex justify-content-center align-items-center"
         style={{ columnGap: "30px" }}
       >
-        <OverlayBtn
+        {/* <OverlayBtn
           btnText="ABOUT PANDA"
           btnLink="/about"
           elem1={
@@ -101,10 +101,10 @@ const Header = () => {
           elem1={<></>}
           elem2={<></>}
           isOverLay={false}
-        />
+        /> */}
         <OverlayBtn
           btnText="SHOP WITH US"
-          btnLink="/"
+          btnLink="https://panda.com.sa/en/"
           elem1={
             <FooterLinksCol
               title={t("Shop with us")}
@@ -116,20 +116,20 @@ const Header = () => {
         />
         <OverlayBtn
           btnText="BECOME A SUPPLIER"
-          btnLink="/supplier"
+          btnLink="https://panda.com.sa/supplier/"
           elem1={<></>}
           elem2={<></>}
           isOverLay={true}
         />
         <OverlayBtn
           btnText="PANDA PLUS"
-          btnLink="/"
+          btnLink="https://plus.panda.sa/en/"
           elem1={<></>}
           elem2={<></>}
           isOverLay={false}
         />
       </div>
-    </>
+    </div>
   );
 };
 

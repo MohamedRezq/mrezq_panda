@@ -46,56 +46,30 @@ const Home = () => {
   return (
     <MainTemp>
       <>
-        <div
-          className="home-section-1 bg-info d-flex justify-content-center align-items-start"
-          style={{
-            columnGap: "160px",
-            paddingTop: "5vw",
-            paddingBottom: "15vw",
-            paddingLeft: "10vw",
-            paddingRight: "3vw",
-            marginTop: "35px",
-          }}
-        >
-          <div className="d-flex flex-column" style={{ rowGap: "70px" }}>
-            <div className="" style={{ width: "265px" }}>
-              <div
-                className=" text-dark mb-2"
-                style={{
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                  fontFamily: "Blogger Sans",
-                  fontStyle: "normal",
-                }}
-              >
+        <div className="home-section-1 bg-info d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center">
+          <div className="d-flex flex-column section">
+            <div className="">
+              <div className="title text-dark mb-2">
                 {t("Better Than Ever...!")}
               </div>
-              <div
-                style={{
-                  fontSize: "14px",
-                  fontWeight: 100,
-                  fontFamily: "Avenir",
-                }}
-              >
+              <div className="text text-dark">
                 {t(
                   "Today, we offer you a new interactive shopping experience, that meets all your needs."
                 )}
               </div>
             </div>
-            <div
-              style={{
-                fontSize: "14px",
-                fontWeight: 100,
-                fontFamily: "Roboto",
-                fontStyle: "normal",
-              }}
-            >
+            <div className="text text-dark">
               {t(
                 "Visit us at selected branches across the Kingdom & enjoy a unique shopping experience!"
               )}
             </div>
             <div className="w-100">
-              <InteractiveBtn text="LEARN MORE" url="/" />
+              <InteractiveBtn
+                color="#70bc1f"
+                reverseColor="white"
+                text="LEARN MORE"
+                url="/"
+              />
             </div>
           </div>
           <div className="position-relative">
@@ -117,38 +91,13 @@ const Home = () => {
             <img src="/img/about-panda.PNG" alt="panda-about-us" />
           </div>
           <div className="d-flex flex-column bg-success section">
-            <div
-              className="mb-2"
-              style={{
-                fontSize: "40px",
-                fontWeight: "bold",
-                fontFamily: "Blogger Sans",
-                fontStyle: "normal",
-              }}
-            >
-              {t("About Panda")}
-            </div>
-            <div
-              style={{
-                fontSize: "21px",
-                fontWeight: "bold",
-                fontFamily: "Blogger Sans",
-                fontStyle: "normal",
-              }}
-            >
+            <div className="title">{t("About Panda")}</div>
+            <div className="subtitle">
               {t(
                 "Panda from a small store in Riyadh to the largest retailer in Saudi Arabia."
               )}
             </div>
-            <div
-              style={{
-                fontSize: "18px",
-                fontWeight: 100,
-                fontFamily: "Avenir",
-                fontStyle: "normal",
-                opacity: "90%",
-              }}
-            >
+            <div className="text">
               {t(
                 "Panda was founded in 1978 and quickly established itself as one of the leading organizations in the retail sector in the Kingdom of Saudi Arabia. In 1994, Panda merged with Azizia Company to become Azizia Panda United. Later in 1998, The Company was acquired by Savola Group, a leading retail company specializing in food products and immediately revolutionized its business model."
               )}
@@ -165,28 +114,8 @@ const Home = () => {
         </div>
         <div className="home-section-3 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
           <div className="d-flex flex-column section">
-            <div
-              className="mb-2 text-success"
-              style={{
-                fontSize: "40px",
-                fontWeight: "bold",
-                fontFamily: "Blogger Sans",
-                fontStyle: "normal",
-              }}
-            >
-              {t("Our Brands")}
-            </div>
-            <div
-              style={{
-                fontSize: "16px",
-                fontWeight: "lighter",
-                fontFamily: "Avenir",
-                fontStyle: "normal",
-                opacity: "90%",
-                width: "300px",
-                paddingRight: "60px",
-              }}
-            >
+            <div className="title text-success">{t("Our Brands")}</div>
+            <div className="text text-dark">
               {t(
                 "With a focus on higher quality, Panda introduced in 2009 a portfolio of private label products ranging from food, non-food to personal care, home care and beauty care products."
               )}
@@ -243,8 +172,8 @@ const Home = () => {
             <img src="/img/social-resp.PNG" alt="panda-social" />
           </div>
         </div>
-        <div className="home-section-7 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
-          <div className="position-relative fill youtube-wrapper">
+        <div className="home-section-7 d-flex flex-column-reverse flex-md-row justify-content-center align-items-strecth">
+          <div className="position-relative youtube-wrapper">
             <YoutubePlayer />
           </div>
           <div className="d-flex flex-column bg-secondary text-white section">
@@ -296,7 +225,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="home-section-8 position-relative d-flex flex-column align-items-center row-gap-2 text-success w-100">
+        {/* <div className="home-section-8 position-relative d-flex flex-column align-items-center row-gap-2 text-success w-100">
           <div
             className="mb-2"
             style={{
@@ -356,7 +285,7 @@ const Home = () => {
             className="d-none d-lg-block position-absolute right-0 bottom-0"
             style={{ right: 0 }}
           />
-        </div>
+        </div> */}
       </>
     </MainTemp>
   );

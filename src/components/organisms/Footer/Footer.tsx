@@ -8,11 +8,11 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
-      <div className="footer border-success">
+      <div className="footer d-none d-lg-flex border-success">
         <div className="footer-logo ">
           <LogoWrapper width="10vw" />
         </div>{" "}
-        <div className="d-flex flex-column flex-lg-row footer-links-container justify-content-between my-4">
+        <div className="flex-column flex-lg-row footer-links-container justify-content-between my-4">
           <FooterLinksCol
             title={t("QUICK LINKS")}
             links={[
