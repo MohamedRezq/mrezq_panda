@@ -4,25 +4,22 @@
   border-radius: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   align-items: center;
   justify-content: center;
   column-gap: 20px;
   text-align: center;
-  border: solid 2px #70bc1f;
   background-color: transparent;
-  color: #70bc1f;
   font-size: 14px;
   width: 180px !important;
   height: 50px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .interactive-btn:hover {
   width: 180px !important;
-  color: white;
-  border: solid 2px white;
-  background-color: #70bc1f;
-  border-color: #70bc1f;
   .arrow-icon {
     padding-right: -10px;
   }

@@ -1,0 +1,17 @@
+.brand-card {
+  box-shadow: rgba(112, 113, 115, 0.25) 0px 3px 8px 0px;
+  height: 305px;
+  width: 190px;
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 115px;
+  }
+}
