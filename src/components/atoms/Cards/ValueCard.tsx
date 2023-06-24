@@ -9,7 +9,7 @@ type ValueCardProps = {
 const ValueCard = (props: ValueCardProps) => {
   return (
     <div className="value-card text-primary">
-      <div>
+      <div className="img-wrapper">
         <img src={props.img} alt={props.text} />
       </div>
       <div className="title text-success">{props.title}</div>

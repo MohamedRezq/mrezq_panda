@@ -106,7 +106,23 @@
       width: 50%;
     }
   }
-  @media (max-width: "768") {
+  .title {
+    font-size: 35px;
+    font-family: "Blogger Sans";
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 5px;
+  }
+  @media (max-width: "600px") {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center !important;
+    .text {
+      font-size: 3vw;
+    }
+    .text {
+      font-size: 16px;
+    }
     .value-cards-container {
       width: 300px;
       div {
@@ -119,17 +135,26 @@
 .home-section-7 {
   @media (max-width: "992px") {
     .youtube-wrapper {
-      padding-left: 1vw;
-      padding-bottom: 1vw;
-      padding-top: 1vw;
-      padding-right: 3vw;
+      padding: 20px !important;
       background: none;
+      height: fit-content;
+      background-color: white !important;
+      background-image: none !important;
+      div {
+        min-height: 250px;
+      }
     }
   }
   .youtube-wrapper {
-    padding-left: 5vw;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
-    //background-image: url("../../../public/img/social-resp.PNG");
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    div {
+      width: 100%;
+      height: 70%;
+    }
+    background-image: url("../../../public//img/social-resp.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

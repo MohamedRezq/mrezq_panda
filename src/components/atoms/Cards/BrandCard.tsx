@@ -8,7 +8,7 @@ type BrandCardProps = {
 const BrandCard = (props: BrandCardProps) => {
   return (
     <div className="brand-card text-primary">
-      <div>
+      <div className="img-wrapper">
         <img src={props.img} alt={props.text} />
       </div>
       <div className="text">{props.text}</div>

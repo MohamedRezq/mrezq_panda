@@ -225,28 +225,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="home-section-8 position-relative d-flex flex-column align-items-center row-gap-2 text-success w-100">
-          <div
-            className="mb-2"
-            style={{
-              fontSize: "40px",
-              fontWeight: "bold",
-              fontFamily: "Blogger Sans",
-              fontStyle: "normal",
-            }}
-          >
-            {t("Our Values")}
-          </div>
-          <div
-            style={{
-              fontSize: "16px",
-              fontWeight: 100,
-              fontFamily: "Avenir",
-              fontStyle: "normal",
-              opacity: "90%",
-              color: "black",
-            }}
-          >
+        <div className="home-section-8 position-relative d-flex flex-column align-items-center row-gap-2 text-success w-100">
+          <div className="title text-success">{t("Our Values")}</div>
+          <div className="text text-black">
             {t(
               "Our values are who we are, where we come from and our values inspire us."
             )}
@@ -285,7 +266,7 @@ const Home = () => {
             className="d-none d-lg-block position-absolute right-0 bottom-0"
             style={{ right: 0 }}
           />
-        </div> */}
+        </div>
       </>
     </MainTemp>
   );
