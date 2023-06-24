@@ -15,3 +15,35 @@
     height: 115px;
   }
 }
+
+.value-card {
+  box-shadow: rgba(112, 113, 115, 0.25) 0px 3px 8px 0px;
+  height: 360px !important;
+  min-width: 300px !important;
+  border-radius: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: "bold";
+  display: flex;
+  flex-direction: column !important;
+  row-gap: 25px;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  .title {
+    white-space: nowrap !important;
+  }
+  .text {
+    font-family: "Avenir";
+    font-weight: "lighter";
+    font-size: small;
+    width: 100% !important;
+  }
+  img {
+    height: 80px !important;
+  }
+}

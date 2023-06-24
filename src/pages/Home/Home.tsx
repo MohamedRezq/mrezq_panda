@@ -3,6 +3,38 @@ import MainTemp from "../../components/templates/MainTemp";
 import { useTranslation } from "react-i18next";
 import { InteractiveBtn } from "../../components/atoms/Button";
 import { BrandCardCarousel } from "../../components/molecules/Carousels";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { ValueCard } from "../../components/atoms/Cards";
+import Container from "react-bootstrap/Container";
+
+const pandaValueCardsData = [
+  {
+    title: "Ownership",
+    text: "We believe ownership with passion are the fuel of excellence",
+    img: "/img/ownership.svg",
+  },
+  {
+    title: "Customer Excellence",
+    text: "We believe that a happy customer is the best way to succeed",
+    img: "/img/customer-experience.svg",
+  },
+  {
+    title: "Teamwork",
+    text: "We believe that everyone contributes to the worth of others",
+    img: "/img/teamwork.svg",
+  },
+  {
+    title: "Integrity",
+    text: "We believe in succeeding with integrity",
+    img: "/img/integrity.svg",
+  },
+  {
+    title: "Agility",
+    text: "We believe in agility to drive change",
+    img: "/img/agility.svg",
+  },
+];
 
 const Home = () => {
   const { t } = useTranslation();
@@ -208,6 +240,116 @@ const Home = () => {
           <div className="position-relative fill">
             <img src="/img/social-resp.PNG" alt="panda-social" />
           </div>
+        </div>
+        <div className="home-section-4 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
+          <div className="position-relative fill">
+            <video src="https://youtu.be/PiwKykGaHuk" />
+          </div>
+          <div className="d-flex flex-column bg-primary about-panda">
+            <div
+              className="mb-2"
+              style={{
+                fontSize: "40px",
+                fontWeight: "bold",
+                fontFamily: "Blogger Sans",
+                fontStyle: "normal",
+              }}
+            >
+              {t("Social Responsibility")}
+            </div>
+            <div
+              style={{
+                fontSize: "21px",
+                fontWeight: "bold",
+                fontFamily: "Blogger Sans",
+                fontStyle: "normal",
+              }}
+            >
+              {t("Partnering with our communities for a better life.")}
+            </div>
+            <div
+              style={{
+                fontSize: "18px",
+                fontWeight: 100,
+                fontFamily: "Avenir",
+                fontStyle: "normal",
+                opacity: "90%",
+              }}
+            >
+              {t(
+                "Panda offers a unique retail experience for individuals and families by providing the best value of fresh foods and products. We empower our customers and communities to improve their quality of life by creating value and enhancing well-being."
+              )}
+            </div>
+            <div className="w-100 mt-4">
+              <InteractiveBtn
+                color="white"
+                reverseColor="#014a2a"
+                text="LEARN MORE"
+                url="/"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="home-section-8 position-relative d-flex flex-column align-items-center row-gap-2 text-success w-100">
+          <div
+            className="mb-2"
+            style={{
+              fontSize: "40px",
+              fontWeight: "bold",
+              fontFamily: "Blogger Sans",
+              fontStyle: "normal",
+            }}
+          >
+            {t("Our Values")}
+          </div>
+          <div
+            style={{
+              fontSize: "16px",
+              fontWeight: 100,
+              fontFamily: "Avenir",
+              fontStyle: "normal",
+              opacity: "90%",
+              color: "black",
+            }}
+          >
+            {t(
+              "Our values are who we are, where we come from and our values inspire us."
+            )}
+          </div>
+          <div className="mt-4 mb-5">
+            <InteractiveBtn
+              color="#70bc1f"
+              reverseColor="white"
+              text="WATCH NOW"
+              url="/"
+            />
+          </div>
+          <div className="value-cards-container d-flex justify-content-center align-items-center row-gap-3 flex-wrap">
+            {pandaValueCardsData.map((pandaValueCard, i) => (
+              <div
+                key={`panda-value-card-${i}-`}
+                style={{ boxSizing: "border-box" }}
+              >
+                <ValueCard
+                  text={pandaValueCard.text}
+                  title={pandaValueCard.title}
+                  img={pandaValueCard.img}
+                />
+              </div>
+            ))}
+          </div>
+          <img
+            src="/img/values_top_bg.svg"
+            alt=""
+            className="d-none d-lg-block position-absolute top-0"
+            style={{ left: 0 }}
+          />
+          <img
+            src="/img/values_bottom_bg.svg"
+            alt=""
+            className="d-none d-lg-block position-absolute right-0 bottom-0"
+            style={{ right: 0 }}
+          />
         </div>
       </>
     </MainTemp>
