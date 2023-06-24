@@ -7,12 +7,12 @@ import FooterLangSelector from "./FooterLangSelector";
 const Footer = () => {
   const { t, i18n } = useTranslation();
   return (
-    <>
-      <div className="footer d-none d-lg-flex border-success">
+    <div className=" d-none d-lg-block">
+      <div className="footer border-success">
         <div className="footer-logo ">
           <LogoWrapper width="10vw" />
         </div>{" "}
-        <div className="flex-column flex-lg-row footer-links-container justify-content-between my-4">
+        <div className="d-flex flex-column flex-lg-row footer-links-container justify-content-between my-4">
           <FooterLinksCol
             title={t("QUICK LINKS")}
             links={[
@@ -53,7 +53,7 @@ const Footer = () => {
       <div className="py-3 d-flex justify-content-center align-items-center bg-primary text-white">
         Copyright © 2021 Panda. All rights reserved.
       </div>
-    </>
+    </div>
   );
 };
 
