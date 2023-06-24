@@ -60,6 +60,12 @@ const resources = {
       CONTACT: "تواصل معنا",
       "BECOME A SUPPLIER": "التسجيل كمورّد",
       "PANDA PLUS": "باندا بلس",
+      "Better Than Ever...!": "...صارت احلي",
+      "Today, we offer you a new interactive shopping experience, that meets all your needs.":
+        "نقدم لكم تجربة تسوق جديدة، تفاعلية و تلبى مختلف احتياجاتكم اكتشفوا فرع باندا المجدد و الأقرب لكم",
+      "Visit us at selected branches across the Kingdom & enjoy a unique shopping experience!":
+        "",
+      "LEARN MORE": "اكتشف المزيد",
     },
   },
 };
