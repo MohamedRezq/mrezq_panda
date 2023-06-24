@@ -16,17 +16,15 @@
 }
 
 .home-section-2,
-.home-section-4 {
-  div {
-    flex-grow: 1;
-  }
+.home-section-4,
+.home-section-7 {
   @media (min-width: "900px") {
     div {
       //   flex-direction: row-reverse !important;
       flex: 100%;
     }
   }
-  .about-panda {
+  .section {
     color: white;
     padding-left: 8vw;
     padding-right: 8vw;
@@ -36,7 +34,7 @@
     text-align: left;
     row-gap: 20px;
   }
-  .about-panda:lang(ar) {
+  .section:lang(ar) {
     text-align: right;
   }
 }
@@ -44,7 +42,7 @@
 .home-section-3 {
   padding-top: 3vw;
   padding-bottom: 3vw;
-  .our-brands {
+  .section {
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 3vw;
@@ -68,5 +66,14 @@
         width: 100%;
       }
     }
+  }
+}
+
+.home-section-7 {
+  .youtube-wrapper {
+    padding-left: 5vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    background-image: url("../../../public/img/social-resp.PNG");
   }
 }

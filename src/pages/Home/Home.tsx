@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { ValueCard } from "../../components/atoms/Cards";
 import Container from "react-bootstrap/Container";
+import { YoutubePlayer } from "../../components/atoms/Players";
 
 const pandaValueCardsData = [
   {
@@ -115,7 +116,7 @@ const Home = () => {
           <div className="position-relative fill">
             <img src="/img/about-panda.PNG" alt="panda-about-us" />
           </div>
-          <div className="d-flex flex-column bg-success about-panda">
+          <div className="d-flex flex-column bg-success section">
             <div
               className="mb-2"
               style={{
@@ -163,7 +164,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-section-3 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
-          <div className="d-flex flex-column our-brands">
+          <div className="d-flex flex-column section">
             <div
               className="mb-2 text-success"
               style={{
@@ -182,7 +183,8 @@ const Home = () => {
                 fontFamily: "Avenir",
                 fontStyle: "normal",
                 opacity: "90%",
-                width: "240px",
+                width: "300px",
+                paddingRight: "60px",
               }}
             >
               {t(
@@ -193,7 +195,7 @@ const Home = () => {
           <BrandCardCarousel />
         </div>
         <div className="home-section-4 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
-          <div className="d-flex flex-column bg-primary about-panda">
+          <div className="d-flex flex-column bg-primary section">
             <div
               className="mb-2"
               style={{
@@ -241,11 +243,11 @@ const Home = () => {
             <img src="/img/social-resp.PNG" alt="panda-social" />
           </div>
         </div>
-        <div className="home-section-4 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
-          <div className="position-relative fill">
-            <video src="https://youtu.be/PiwKykGaHuk" />
+        <div className="home-section-7 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
+          <div className="position-relative fill youtube-wrapper">
+            <YoutubePlayer />
           </div>
-          <div className="d-flex flex-column bg-primary about-panda">
+          <div className="d-flex flex-column bg-secondary text-white section">
             <div
               className="mb-2"
               style={{
@@ -255,38 +257,42 @@ const Home = () => {
                 fontStyle: "normal",
               }}
             >
-              {t("Social Responsibility")}
+              {t("Our Vision")}
             </div>
             <div
               style={{
-                fontSize: "21px",
+                fontSize: "16px",
+                fontWeight: "light",
+                fontFamily: "Avenir",
+                fontStyle: "normal",
+              }}
+            >
+              {t(
+                "To be the sustainable leading retailer, innovating to delight the communities we serve every day."
+              )}
+            </div>
+            <div
+              className="mb-2 mt-5"
+              style={{
+                fontSize: "40px",
                 fontWeight: "bold",
                 fontFamily: "Blogger Sans",
                 fontStyle: "normal",
               }}
             >
-              {t("Partnering with our communities for a better life.")}
+              {t("Our Mission")}
             </div>
             <div
               style={{
-                fontSize: "18px",
-                fontWeight: 100,
+                fontSize: "16px",
+                fontWeight: "light",
                 fontFamily: "Avenir",
                 fontStyle: "normal",
-                opacity: "90%",
               }}
             >
               {t(
-                "Panda offers a unique retail experience for individuals and families by providing the best value of fresh foods and products. We empower our customers and communities to improve their quality of life by creating value and enhancing well-being."
+                "To empower our colleagues, customers, and communities to improve their quality of life by creating value and enhancing well-being."
               )}
-            </div>
-            <div className="w-100 mt-4">
-              <InteractiveBtn
-                color="white"
-                reverseColor="#014a2a"
-                text="LEARN MORE"
-                url="/"
-              />
             </div>
           </div>
         </div>
