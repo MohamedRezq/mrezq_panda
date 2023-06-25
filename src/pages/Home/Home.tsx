@@ -3,10 +3,7 @@ import MainTemp from "../../components/templates/MainTemp";
 import { useTranslation } from "react-i18next";
 import { InteractiveBtn } from "../../components/atoms/Button";
 import { BrandCardCarousel } from "../../components/molecules/Carousels";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { ValueCard } from "../../components/atoms/Cards";
-import Container from "react-bootstrap/Container";
 import { YoutubePlayer } from "../../components/atoms/Players";
 
 const pandaValueCardsData = [
@@ -46,7 +43,7 @@ const Home = () => {
   return (
     <MainTemp>
       <>
-        <div className="home-section-1 bg-info d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center">
+        <div className="home-section-1 multi-lingual bg-info d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center">
           <div className="d-flex flex-column section">
             <div className="">
               <div className="title text-dark mb-2">
@@ -64,15 +61,15 @@ const Home = () => {
               )}
             </div>
             <div className="w-100">
-              <InteractiveBtn
+              {/* <InteractiveBtn
                 color="#70bc1f"
                 reverseColor="white"
                 text="LEARN MORE"
                 url="/"
-              />
+              /> */}
             </div>
           </div>
-          <div className="position-relative">
+          <div className="position-relative p-lg-5">
             <img
               src="/img/cxr-banner-2-en.png"
               alt="panda-banner"
@@ -86,7 +83,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="home-section-2 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
+        <div className="home-section-2 multi-lingual d-flex flex-column flex-md-row justify-content-center align-items-strecth">
           <div className="position-relative fill">
             <img src="/img/about-panda.PNG" alt="panda-about-us" />
           </div>
@@ -103,16 +100,16 @@ const Home = () => {
               )}
             </div>
             <div className="w-100 mt-4">
-              <InteractiveBtn
+              {/* <InteractiveBtn
                 color="white"
                 reverseColor="#70bc1f"
                 text="LEARN MORE"
                 url="/"
-              />
+              /> */}
             </div>
           </div>
         </div>
-        <div className="home-section-3 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
+        <div className="home-section-3 p-lg-3 multi-lingual d-flex flex-column flex-md-row justify-content-center align-items-strecth">
           <div className="d-flex flex-column section">
             <div className="title text-success">{t("Our Brands")}</div>
             <div className="text text-dark">
@@ -123,7 +120,7 @@ const Home = () => {
           </div>
           <BrandCardCarousel />
         </div>
-        <div className="home-section-4 d-flex flex-column flex-md-row justify-content-center align-items-strecth">
+        <div className="home-section-4 multi-lingual d-flex flex-column flex-md-row justify-content-center align-items-strecth">
           <div className="d-flex flex-column bg-primary section">
             <div
               className="mb-2"
@@ -160,19 +157,19 @@ const Home = () => {
               )}
             </div>
             <div className="w-100 mt-4">
-              <InteractiveBtn
+              {/* <InteractiveBtn
                 color="white"
                 reverseColor="#014a2a"
                 text="LEARN MORE"
                 url="/"
-              />
+              /> */}
             </div>
           </div>
           <div className="position-relative fill">
             <img src="/img/social-resp.PNG" alt="panda-social" />
           </div>
         </div>
-        <div className="home-section-7 d-flex flex-column-reverse flex-md-row justify-content-center align-items-strecth">
+        <div className="home-section-7 multi-lingual d-flex flex-column-reverse flex-md-row justify-content-center align-items-strecth">
           <div className="position-relative youtube-wrapper">
             <YoutubePlayer />
           </div>
@@ -233,12 +230,12 @@ const Home = () => {
             )}
           </div>
           <div className="mt-4 mb-5">
-            <InteractiveBtn
+            {/* <InteractiveBtn
               color="#70bc1f"
               reverseColor="white"
               text="WATCH NOW"
               url="/"
-            />
+            /> */}
           </div>
           <div className="value-cards-container d-flex justify-content-center align-items-center row-gap-3 flex-wrap">
             {pandaValueCardsData.map((pandaValueCard, i) => (

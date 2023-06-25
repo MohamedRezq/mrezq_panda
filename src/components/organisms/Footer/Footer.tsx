@@ -7,7 +7,7 @@ import FooterLangSelector from "./FooterLangSelector";
 const Footer = () => {
   const { t, i18n } = useTranslation();
   return (
-    <div className=" d-none d-lg-block">
+    <div className="multi-lingual">
       <div className="footer border-success">
         <div className="footer-logo ">
           <LogoWrapper width="10vw" />

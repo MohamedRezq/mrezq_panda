@@ -5,7 +5,11 @@ import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 import { SlSocialLinkedin } from "react-icons/sl";
 import IconWrapper from "./IconWrapper";
 
-const HeaderIconGroup = () => {
+type HeaderIconGroupProps = {
+  iconSize: string;
+};
+
+const HeaderIconGroup = (props: HeaderIconGroupProps) => {
   return (
     <div className="d-flex" style={{ gap: "20px" }}>
       {[
@@ -29,7 +33,7 @@ const HeaderIconGroup = () => {
           color="success"
           icon={icon.elem}
           url={icon.url}
-          size={"25px"}
+          size={props.iconSize}
         />
       ))}
     </div>

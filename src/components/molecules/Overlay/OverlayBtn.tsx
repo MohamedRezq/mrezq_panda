@@ -18,10 +18,14 @@ const OverlayBtn = (props: OverlayBtnProps) => {
   return (
     <OverlayTrigger
       placement="bottom"
-      delay={{ show: 250, hide: 2500 }}
+      delay={{ show: 250, hide: 2000 }}
       overlay={
         props.isOverLay ? (
-          <div id="button-tooltip" {...props} className="overlayContainer">
+          <div
+            id="button-tooltip"
+            {...props}
+            className="overlayContainer multi-lingual"
+          >
             <div>{props.elem1}</div>
             <div>{props.elem2}</div>
           </div>

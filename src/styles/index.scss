@@ -34,9 +34,9 @@ a {
   min-height: 100%;
 }
 
-*:lang(ar) {
+.multi-lingual:lang(ar) {
   flex-direction: row-reverse !important;
-  text-align: right;
+  text-align: right !important;
   font-family: "Roboto" !important;
 }
 //-----------------------------------------------------------------------------------//
@@ -49,6 +49,7 @@ a {
 @import url("https://fonts.cdnfonts.com/css/roboto");
 @import url("https://fonts.cdnfonts.com/css/avenir");
 @import "react-multi-carousel/lib/styles.css";
+@import "react-modern-drawer/dist/index.css";
 @import "node_modules/bootstrap/scss/bootstrap"; // BootStrap Library
 //-----------------------------------------------------------------------------------//
 //-----------------------------------------------------------------------------------//

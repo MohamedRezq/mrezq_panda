@@ -54,3 +54,31 @@
     }
   }
 }
+
+.overlayContainer:lang(ar) {
+  justify-content: flex-end !important;
+}
+.mobile-screen-header {
+  font-family: "Roboto";
+  .accordion-item {
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none !important;
+  }
+  .accordion-body {
+    padding: 0 !important;
+  }
+  .accordion-link {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .accordion-link:hover {
+    background-color: #014a2a;
+    color: #eee;
+  }
+}
