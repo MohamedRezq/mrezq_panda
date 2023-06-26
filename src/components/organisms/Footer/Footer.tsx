@@ -6,6 +6,13 @@ import FooterLangSelector from "./FooterLangSelector";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
+  const [pandaLang, setPandaLang] = React.useState(
+    document.getElementsByTagName("html")[0].getAttribute("lang")
+  );
+  React.useEffect(() => {
+    setPandaLang(document.getElementsByTagName("html")[0].getAttribute("lang"));
+  }, []);
+
   return (
     <div className="multi-lingual">
       <div className="footer border-success">
@@ -53,7 +60,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-3 d-flex justify-content-center align-items-center bg-primary text-white">
-        {t("Copyright")} © 2021 {t("Panda")}. {t("All rights reserved.")}
+        {pandaLang === "en"
+          ? "Copyright © 2021 Panda. All rights reserved."
+          : "جميع حقوق النشر محفوظة باندا © 2021"}
       </div>
     </div>
   );

@@ -144,9 +144,9 @@ const Header = () => {
         </div>
       </header>
       <header className="mobile-screen-header d-lg-none">
-        <div className="header d-flex justify-content-between align-items-center">
+        <div className="header d-flex mobile-rtl justify-content-between align-items-center">
           <LogoWrapper width="11vw" />
-          <div className="d-flex justify-content-center align-items-center gap-4">
+          <div className="d-flex mobile-rtl justify-content-center align-items-center gap-4">
             <div className="d-flex gap-3 align-items-center langSwitcher">
               <div
                 onClick={(e) => handleLangSwitcher(e, "en")}
@@ -179,7 +179,7 @@ const Header = () => {
           <div className="h-100">
             <div className="header d-flex justify-content-between align-items-center">
               <LogoWrapper width="11vw" />
-              <div className="d-flex mobile-lang-translation justify-content-center align-items-center gap-4">
+              <div className="d-flex mobile-rtl justify-content-center align-items-center gap-4">
                 <div className="d-flex gap-3 align-items-center langSwitcher">
                   <div
                     onClick={(e) => handleLangSwitcher(e, "en")}
