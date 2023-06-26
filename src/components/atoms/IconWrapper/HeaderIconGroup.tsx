@@ -3,6 +3,7 @@ import React from "react";
 import { FiFacebook, FiTwitter } from "react-icons/fi";
 import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 import { SlSocialLinkedin } from "react-icons/sl";
+import { BsWhatsapp } from "react-icons/bs";
 import IconWrapper from "./IconWrapper";
 
 type HeaderIconGroupProps = {
@@ -26,6 +27,10 @@ const HeaderIconGroup = (props: HeaderIconGroupProps) => {
         {
           elem: <SlSocialLinkedin />,
           url: "https://www.linkedin.com/company/azizia-panda-united-savola-group/",
+        },
+        {
+          elem: <BsWhatsapp />,
+          url: "https://wa.me/+966920027707",
         },
       ].map((icon, i) => (
         <IconWrapper

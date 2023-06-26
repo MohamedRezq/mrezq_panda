@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 type ValueCardProps = {
   title: string;
@@ -7,13 +8,14 @@ type ValueCardProps = {
 };
 
 const ValueCard = (props: ValueCardProps) => {
+  const { t } = useTranslation();
   return (
     <div className="value-card text-primary">
       <div className="img-wrapper">
         <img src={props.img} alt={props.text} />
       </div>
-      <div className="title text-success">{props.title}</div>
-      <div className="text text-dark">{props.text}</div>
+      <div className="title text-success">{t(props.title)}</div>
+      <div className="text text-dark">{t(props.text)}</div>
     </div>
   );
 };

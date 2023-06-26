@@ -13,7 +13,7 @@ const Footer = () => {
           <LogoWrapper width="10vw" />
         </div>{" "}
         <div className="d-flex flex-column flex-lg-row footer-links-container justify-content-between my-4">
-          <FooterLinksCol
+          {/* <FooterLinksCol
             title={t("QUICK LINKS")}
             links={[
               { text: t("About"), url: "" },
@@ -32,8 +32,8 @@ const Footer = () => {
               { text: t("Certificates and Awards"), url: "" },
               { text: t("Savola Corporate"), url: "" },
             ]}
-          />
-          <FooterLinksCol
+          /> */}
+          {/* <FooterLinksCol
             title={t("FOLLOW US ON SOCIAL")}
             links={[
               { text: t("Facebook"), url: "" },
@@ -42,16 +42,18 @@ const Footer = () => {
               { text: t("Twitter"), url: "" },
               { text: t("LinkedIn"), url: "" },
             ]}
-          />
+          /> */}
           <FooterLinksCol
             title={t("SHOP WITH US")}
-            links={[{ text: t("Panda Click"), url: "" }]}
+            links={[
+              { text: t("Panda Click"), url: "https://panda.com.sa/en/" },
+            ]}
           />
           <FooterLangSelector />
         </div>
       </div>
       <div className="py-3 d-flex justify-content-center align-items-center bg-primary text-white">
-        Copyright © 2021 Panda. All rights reserved.
+        {t("Copyright")} © 2021 {t("Panda")}. {t("All rights reserved.")}
       </div>
     </div>
   );

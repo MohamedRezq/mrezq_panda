@@ -114,26 +114,28 @@ const Header = () => {
           isOverLay={false}
         /> */}
           <OverlayBtn
-            btnText="SHOP WITH US"
+            btnText={t("SHOP WITH US")}
             btnLink="https://panda.com.sa/en/"
             elem1={
               <FooterLinksCol
                 title={t("Shop with us")}
-                links={[{ text: t("Panda click"), url: "" }]}
+                links={[
+                  { text: t("Panda click"), url: "https://panda.com.sa/en/" },
+                ]}
               />
             }
             elem2={<img src="/img/menu-shop-with-us1.jpg" />}
             isOverLay={true}
           />
           <OverlayBtn
-            btnText="BECOME A SUPPLIER"
+            btnText={t("BECOME A SUPPLIER")}
             btnLink="https://panda.com.sa/supplier/"
             elem1={<></>}
             elem2={<></>}
             isOverLay={true}
           />
           <OverlayBtn
-            btnText="PANDA PLUS"
+            btnText={t("PANDA PLUS")}
             btnLink="https://plus.panda.sa/en/"
             elem1={<></>}
             elem2={<></>}
@@ -177,7 +179,7 @@ const Header = () => {
           <div className="h-100">
             <div className="header d-flex justify-content-between align-items-center">
               <LogoWrapper width="11vw" />
-              <div className="d-flex justify-content-center align-items-center gap-4">
+              <div className="d-flex mobile-lang-translation justify-content-center align-items-center gap-4">
                 <div className="d-flex gap-3 align-items-center langSwitcher">
                   <div
                     onClick={(e) => handleLangSwitcher(e, "en")}
