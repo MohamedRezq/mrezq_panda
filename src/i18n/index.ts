@@ -22,7 +22,7 @@ const resources = {
       Twitter: "Twitter",
       LinkedIn: "LinkedIn",
       "SHOP WITH US": "SHOP WITH US",
-      "Panda Click": "Panda Click",
+      "Panda App": "Panda App",
       Copyright: "Copyright",
       "ABOUT PANDA": "ABOUT PANDA",
       "SOCIAL RESPONSIBILITY": "SOCIAL RESPONSIBILITY",
@@ -53,8 +53,8 @@ const resources = {
       LinkedIn: "لينكد إن",
       "SHOP WITH US": "تسوّق معنا",
       "Shop with us": "تسوّق معنا",
-      "Panda Click": "بنده كليك",
-      "Panda click": "بنده كليك",
+      "Panda App": "تطبيق بنده",
+      "Panda app": "تطبيق بنده",
       "Copyright ": "جميع الحقوق محفوظة",
       "ABOUT PANDA": "نبذة عن بنده",
       "SOCIAL RESPONSIBILITY": "المسؤولية الاجتماعية",
@@ -63,17 +63,17 @@ const resources = {
       "BECOME A SUPPLIER": "التسجيل كمورّد",
       "PANDA PLUS": "باندا بلس",
       "Panda plus": "باندا بلس",
-      "Better Than Ever...!": "...صارت احلي",
+      "Better Than Ever...!": "...صارت أحلي",
       "Today, we offer you a new interactive shopping experience, that meets all your needs.":
-        "نقدم لكم تجربة تسوق جديدة، تفاعلية و تلبى مختلف احتياجاتكم اكتشفوا فرع باندا المجدد و الأقرب لكم",
+        "نقدم لكم تجربة تسوق جديدة، تفاعلية و تلبى مختلف احتياجاتكم. اكتشفوا فرع باندا المجدد و الأقرب لكم",
       "Visit us at selected branches across the Kingdom & enjoy a unique shopping experience!":
         "",
       "LEARN MORE": "اكتشف المزيد",
-      "About Panda": "عن الباندا",
+      "About Panda": "عن باندا",
       "Panda from a small store in Riyadh to the largest retailer in Saudi Arabia.":
         "بنده من متجر صغير في الرياض إلى أكبر بائع تجزئة في المملكة العربية السعودية",
       "Panda was founded in 1978 and quickly established itself as one of the leading organizations in the retail sector in the Kingdom of Saudi Arabia. In 1994, Panda merged with Azizia Company to become Azizia Panda United. Later in 1998, The Company was acquired by Savola Group, a leading retail company specializing in food products and immediately revolutionized its business model.":
-        "تأسست بنده عام 1978 وسرعان ما رسخت مكانتها كواحدة من المؤسسات الرائدة في قطاع التجزئة في المملكة العربية السعودية. في عام 1994 اندمجت بنده مع شركة العزيزية لتصبح عزيزية بنده المتحدة. في وقت لاحق من عام 1998 ، تم الاستحواذ على الشركة من قبل مجموعة صافولا ، وهي شركة تجزئة رائدة متخصصة في المنتجات الغذائية وأحدثت ثورة في نموذج أعمالها على الفور.",
+        "تأسست بنده عام 1978 وسرعان ما رسخت مكانتها كواحدة من المؤسسات الرائدة في قطاع التجزئة في المملكة العربية السعودية. في عام 1994 اندمجت بنده مع شركة العزيزية لتصبح عزيزية بنده المتحدة. في وقت لاحق من عام 1998 ، تم الاستحواذ على الشركة من قبل مجموعة صافولا ، وهي شركة تجزئة رائدة متخصصة في المنتجات الغذائية وأحدثت ثورة في نموذج أعمالها على الفور",
       "Our Brands": "علاماتنا التجارية",
       "With a focus on higher quality, Panda introduced in 2009 a portfolio of private label products ranging from food, non-food to personal care, home care and beauty care products.":
         "مع التركيز على الجودة العالية ،  في عام 2009 مجموعة من منتجات العلامات الخاصة التي تتراوح من المواد الغذائية وغير الغذائية إلى العناية الشخصية والعناية المنزلية ومنتجات العناية بالجمال.",

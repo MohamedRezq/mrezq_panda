@@ -52,9 +52,7 @@ const Footer = () => {
           /> */}
           <FooterLinksCol
             title={t("SHOP WITH US")}
-            links={[
-              { text: t("Panda Click"), url: "https://panda.com.sa/en/" },
-            ]}
+            links={[{ text: t("Panda App"), url: "https://go.panda.sa/app" }]}
           />
           <FooterLangSelector />
         </div>

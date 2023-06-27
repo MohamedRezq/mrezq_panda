@@ -27,11 +27,11 @@ const MobileMenu = (props: MobileMenuProps) => {
         <Accordion.Header>{t("SHOP WITH US")}</Accordion.Header>
         <Accordion.Body>
           <Link className="w-100 accordion-link" to="https://panda.com.sa/en/">
-            {t("Panda Click")}
+            {t("Panda App")}
           </Link>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="2">
+      {/* <Accordion.Item eventKey="2">
         <Accordion.Header>{t("BECOME A SUPPLIER")}</Accordion.Header>
         <Accordion.Body>
           <Link
@@ -41,11 +41,11 @@ const MobileMenu = (props: MobileMenuProps) => {
             {t("BECOME A SUPPLIER")}
           </Link>
         </Accordion.Body>
-      </Accordion.Item>
+      </Accordion.Item> */}
       <Accordion.Item eventKey="3">
         <Accordion.Header>{t("PANDA PLUS")}</Accordion.Header>
         <Accordion.Body>
-          <Link className="w-100 accordion-link" to="https://plus.panda.sa/en/">
+          <Link className="w-100 accordion-link" to="https://plus.panda.sa/">
             {t("Panda plus")}
           </Link>
         </Accordion.Body>

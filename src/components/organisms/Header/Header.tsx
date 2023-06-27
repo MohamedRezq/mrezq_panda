@@ -21,9 +21,7 @@ const Header = () => {
     setIsOpen((prevState) => !prevState);
   };
   //-----------------------------------------------------------------//
-  const [pandaLang, setPandaLang] = useState(
-    document.getElementsByTagName("html")[0].getAttribute("lang")
-  );
+  const [pandaLang, setPandaLang] = useState("ar");
   const handleLangSwitcher = (e: any, lang: string) => {
     e.preventDefault();
     setPandaLang(lang);
@@ -47,7 +45,7 @@ const Header = () => {
     <>
       <header className="large-screen-header d-none d-lg-block">
         <div className="header d-flex multi-lingual justify-content-between align-items-center">
-          <LogoWrapper width="11vw" />
+          <LogoWrapper width="9vw" />
           <div className="d-flex multi-lingual justify-content-center align-items-center gap-4">
             <div className="d-flex gap-3 align-items-center langSwitcher">
               <div
@@ -120,23 +118,23 @@ const Header = () => {
               <FooterLinksCol
                 title={t("Shop with us")}
                 links={[
-                  { text: t("Panda click"), url: "https://panda.com.sa/en/" },
+                  { text: t("Panda app"), url: "https://go.panda.sa/app" },
                 ]}
               />
             }
             elem2={<img src="/img/menu-shop-with-us1.jpg" />}
             isOverLay={true}
           />
-          <OverlayBtn
+          {/* <OverlayBtn
             btnText={t("BECOME A SUPPLIER")}
             btnLink="https://panda.com.sa/supplier/"
             elem1={<></>}
             elem2={<></>}
             isOverLay={true}
-          />
+          /> */}
           <OverlayBtn
             btnText={t("PANDA PLUS")}
-            btnLink="https://plus.panda.sa/en/"
+            btnLink="https://plus.panda.sa/"
             elem1={<></>}
             elem2={<></>}
             isOverLay={false}
