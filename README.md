@@ -4,7 +4,8 @@ This project is a portfolio website for a Saudi Arabian company called Panda, wh
 
 ## Demo
 
-![](https://github.com/MohamedRezq/mrezq_panda/blob/master/panda.PNG)
+![](https://github.com/MohamedRezq/mrezq_panda/blob/master/panda-ar.PNG)
+![](https://github.com/MohamedRezq/mrezq_panda/blob/master/panda-en.PNG)
 
 ## Installation & Running
 
