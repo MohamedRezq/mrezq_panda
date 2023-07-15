@@ -24,7 +24,7 @@ npm install
 To run the project, use the following command:
 
 ```
-npm run dev
+npm run start
 ```
 
 The project will be available on `http://localhost:3000`.
@@ -107,7 +107,7 @@ Talented and experienced Full Stack Web Developer with 3 years of freelance basi
 
 E-Commerce Skills:
 
-✅ Stripe
-✅ Shopify
-✅ BigCommerce
-✅ CMS (Prismic | Contentful | Sanity)
+- ✅ Stripe
+- ✅ Shopify
+- ✅ BigCommerce
+- ✅ CMS (Prismic | Contentful | Sanity)
