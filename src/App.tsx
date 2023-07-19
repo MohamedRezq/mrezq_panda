@@ -1,10 +1,8 @@
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-
 //-----> Pages <-------------------------------------------------//
-import { HomePage } from "./pages";
+import { HomePage, LeadershipPage } from "./pages";
 //- END OF IMPORTS -----------------------------------------//
 
 function App() {
@@ -21,6 +19,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="*" element={<HomePage />} />
+        <Route path="/leadership" element={<LeadershipPage />} />
+        <Route path="/en/leadership" element={<LeadershipPage />} />
+        <Route path="/ar/leadership" element={<LeadershipPage />} />
       </Routes>
     </div>
   );

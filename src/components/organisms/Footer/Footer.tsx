@@ -20,17 +20,18 @@ const Footer = () => {
           <LogoWrapper width="10vw" />
         </div>{" "}
         <div className="d-flex flex-column flex-lg-row footer-links-container justify-content-between my-4">
-          {/* <FooterLinksCol
+          <FooterLinksCol
             title={t("QUICK LINKS")}
             links={[
-              { text: t("About"), url: "" },
-              { text: t("Leadership"), url: "" },
-              { text: t("Social Responsibility"), url: "" },
-              { text: t("Careers"), url: "" },
-              { text: t("Contact"), url: "" },
-              { text: t("Speak Up"), url: "" },
+              // { text: t("About"), url: "" },
+              { text: t("Leadership"), url: "/leadership" },
+              // { text: t("Social Responsibility"), url: "" },
+              // { text: t("Careers"), url: "" },
+              // { text: t("Contact"), url: "" },
+              // { text: t("Speak Up"), url: "" },
             ]}
           />
+          {/*
           <FooterLinksCol
             title={t("ABOUT THIS WEBSITE")}
             links={[

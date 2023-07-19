@@ -1,0 +1,101 @@
+.leadership-section-1 {
+  @media (min-width: "992px") {
+    background-image: url("../../../public/img/leadership-banner-large.PNG");
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15vw;
+    font-size: 4vw;
+    height: 27vw;
+    padding-bottom: 0;
+  }
+  height: 45vw;
+  margin-top: 30px;
+  font-size: 7vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../public/img/leadership-banner-mobile.PNG");
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 5vw;
+  padding-bottom: 5vw;
+}
+
+.leadership-section-1:lang(ar) {
+  @media (min-width: "992px") {
+    transform: scaleX(-1);
+    div {
+      transform: scaleX(-1);
+    }
+  }
+  transform: scaleX(-1);
+  div {
+    transform: scaleX(-1);
+  }
+}
+
+.leadership-section-2,
+.leadership-section-3 {
+  @media (min-width: "768px") {
+    flex-wrap: wrap;
+    div {
+      width: 50%;
+    }
+    .section {
+      flex-wrap: nowrap;
+      div {
+        width: 100%;
+      }
+      width: 50%;
+      .title {
+        font-size: 6vw;
+      }
+      .subtitle {
+        font-size: 4vw;
+      }
+      .text {
+        font-size: 3vw;
+      }
+    }
+  }
+  .section {
+    color: white;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+    line-height: 27.2px;
+    text-align: left;
+    row-gap: 25px;
+    .title {
+      font-size: 35px;
+      font-family: "Blogger Sans";
+      font-weight: bold;
+      font-style: normal;
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      font-size: 21px;
+      font-family: "Blogger Sans";
+      font-weight: bold;
+      font-style: normal;
+    }
+    .text {
+      font-size: 18px;
+      font-family: "Avenir";
+      font-weight: light;
+      font-style: normal;
+    }
+  }
+  .title {
+    font-size: 35px;
+    font-family: "Blogger Sans";
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 5px;
+  }
+  .section:lang(ar) {
+    text-align: right;
+  }
+}

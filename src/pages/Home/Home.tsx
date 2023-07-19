@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
-import MainTemp from "../../components/templates/MainTemp";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { InteractiveBtn } from "../../components/atoms/Button";
+//-- Components ---------------------------------------------------------------//
+import MainTemp from "../../components/templates/MainTemp";
+// import { InteractiveBtn } from "../../components/atoms/Button";
 import { BrandCardCarousel } from "../../components/molecules/Carousels";
 import { ValueCard } from "../../components/atoms/Cards";
 import { YoutubePlayer } from "../../components/atoms/Players";
+//----------------------------------------------------------------------------//
+//----------------------------------------------------------------------------//
 
 const pandaValueCardsData = [
   {
