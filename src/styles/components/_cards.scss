@@ -70,7 +70,7 @@
 
 .team-card {
   box-shadow: rgba(112, 113, 115, 0.25) 0px 3px 8px 0px;
-  height: 430px;
+  height: 350px;
   width: 100%;
   font-family: "Roboto";
   font-weight: 900;
@@ -78,13 +78,13 @@
   font-size: 11pt;
   font-weight: 400;
   .team-card-content {
-    height: 160px;
+    height: 140px;
     padding-bottom: 20px;
   }
   .team-card-img {
     width: 100%;
     top: 0;
-    height: 270px;
+    height: 210px;
     position: relative;
     img {
       width: inherit;

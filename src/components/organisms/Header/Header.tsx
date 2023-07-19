@@ -68,23 +68,24 @@ const Header = () => {
           className="navLinks bg-success mt-2 d-flex justify-content-center align-items-center"
           style={{ columnGap: "30px" }}
         >
-          {/* <OverlayBtn
-          btnText="ABOUT PANDA"
-          btnLink="/about"
-          elem1={
-            <FooterLinksCol
-              title={t("QUICK LINKS")}
-              links={[
-                { text: t("Our History"), url: "" },
-                { text: t("Leadership"), url: "" },
-                { text: t("Certificates and Awards"), url: "" },
-                { text: t("Savola Corporate"), url: "" },
-              ]}
-            />
-          }
-          elem2={<></>}
-          isOverLay={true}
-        />
+          <OverlayBtn
+            btnText="ABOUT PANDA"
+            btnLink="/about"
+            elem1={
+              <FooterLinksCol
+                title={t("QUICK LINKS")}
+                links={[
+                  // { text: t("Our History"), url: "" },
+                  { text: t("Leadership"), url: "/leadership" },
+                  // { text: t("Certificates and Awards"), url: "" },
+                  // { text: t("Savola Corporate"), url: "" },
+                ]}
+              />
+            }
+            elem2={<></>}
+            isOverLay={true}
+          />
+          {/*
         <OverlayBtn
           btnText="SOCIAL RESPONSIBILITY"
           btnLink="/partnership-with-communities"
