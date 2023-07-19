@@ -1,46 +1,113 @@
-# Getting Started with Create React App
+# Panda Bilingual Website Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a portfolio website for a Saudi Arabian company called Panda, which is a leading market chain in the region. The website is built with React.js, TypeScript, Sass, and Bootstrap, and it is available in both English and Arabic languages.
 
-## Available Scripts
+## Demo
+[https://panda-ui-nu.vercel.app/en/](https://panda-ui-nu.vercel.app/en/)
+![](https://github.com/MohamedRezq/mrezq_panda/blob/master/panda-ar.PNG)
+![](https://github.com/MohamedRezq/mrezq_panda/blob/master/panda-en.PNG)
 
-In the project directory, you can run:
+## Installation & Running
 
-### `npm start`
+To install this project, clone the repository to your local machine using the following command:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+gh repo clone MohamedRezq/mrezq_panda
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+After cloning the repository, navigate to the project directory and run the following command to install the project dependencies:
 
-### `npm test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the project, use the following command:
 
-### `npm run build`
+```
+npm run start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The project will be available on `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions to this project are always welcome! See `contributing.md` for more information on how to get started.
 
-### `npm run eject`
+Please adhere to this project's `code of conduct`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## FAQ
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### What are the system requirements for running this project?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run this project, you will need to have Node.js version 14 or higher installed on your system. You can download the latest version of Node.js from the official website. This project is designed to be compatible with modern web browsers such as Google Chrome, Mozilla Firefox, and Microsoft Edge. It may not work optimally on older or outdated browsers.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### How do I contribute to this project?
 
-## Learn More
+Please see the contributing guidelines for more detailed information on how to contribute to this project. We appreciate your contributions and look forward to working with you!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### How is this project licensed?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License, which is a permissive open-source license that allows for free use, modification, and distribution of the project. You can find the full text of the license in the LICENSE file. By using or contributing to this project, you agree to abide by the terms of the MIT License.
+
+#### Who can I contact for more information?
+
+If you have any questions or feedback about this project, you can contact the project maintainer at [mrezq.dev@gmail.com](mrezq.dev@gmail.com). Alternatively, you can reach out to us on [LinkedIn](https://www.linkedin.com/in/mohamed-rezq-2021/) ↗ for more information and updates about the project. We appreciate your interest and look forward to hearing from you!
+
+## Feedback
+
+If you have any feedback, please reach out to us at [mrezq.dev@gmail.com](mailto:mrezq.dev@gmail.com)
+
+## Badges
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+## Contact
+
+If you have any questions or feedback about this API, please feel free to contact us at [mrezq.dev@gmail.com](mailto:mrezq.dev@gmail.com). We'd love to hear from you!
+
+## 🚀 About Me
+
+Talented and experienced Full Stack Web Developer with 3 years of freelance basis experience in MERN stack.
+
+## 🛠 Skills
+
+> > Programming Languages:
+
+- ✅ JavaScript
+- ✅ TypeScript
+
+> > Front-end Skills:
+
+- ✅ React.js
+- ✅ Next.js
+- ✅ Gatsby
+- ✅ Redux-Toolkit
+- ✅ GraphQL
+- ✅ HTML5 | CSS3 | Sass | jQuery
+- ✅ Bootstrap | Tailwind | Material-UI
+
+> > Back-end Skills:
+
+- ✅ Node.js | Express.js | MVC Architecture
+- ✅ Restful API Development and Testing
+- ✅ SQL | MySQL | PostgreSQL
+- ✅ NoSQL | MongoDB
+- ✅ AWS (EC2 | S3)
+- ✅ Postman
+- ✅ GraphQL Apollo Server
+
+> > E-Commerce Skills:
+
+- ✅ Stripe
+- ✅ Shopify
+- ✅ BigCommerce
+- ✅ CMS (Prismic | Contentful | Sanity)
+
+E-Commerce Skills:
+
+- ✅ Stripe
+- ✅ Shopify
+- ✅ BigCommerce
+- ✅ CMS (Prismic | Contentful | Sanity)
