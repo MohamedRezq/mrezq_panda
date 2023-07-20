@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import i18n from "i18next";
 //-----> Pages <-------------------------------------------------//
 import { HomePage, LeadershipPage } from "./pages";
+import { AboutPage } from "./pages/About";
 //- END OF IMPORTS -----------------------------------------//
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
         <Route path="/leadership" element={<LeadershipPage />} />
         <Route path="/en/leadership" element={<LeadershipPage />} />
         <Route path="/ar/leadership" element={<LeadershipPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/en/about" element={<AboutPage />} />
+        <Route path="/ar/about" element={<AboutPage />} />
       </Routes>
     </div>
   );

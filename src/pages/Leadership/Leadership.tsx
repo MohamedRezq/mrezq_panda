@@ -1,103 +1,15 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import MainTemp from "../../components/templates/MainTemp";
-import { TeamCard, ValueCard } from "../../components/atoms";
 import { Row, Col } from "react-bootstrap";
+//-- Static Data --------------------------------------------------------------//
+import { executiveTeam } from "../../data";
 //-- Components ---------------------------------------------------------------//
-
+import { TeamCard } from "../../components/atoms";
+import { OurValuesSection } from "../../components/organisms";
+import MainTemp from "../../components/templates/MainTemp";
 //----------------------------------------------------------------------------//
 //----------------------------------------------------------------------------//
 
-const pandaValueCardsData = [
-  {
-    title: "Ownership",
-    text: "We believe ownership with passion are the fuel of excellence",
-    img: "/img/ownership.svg",
-  },
-  {
-    title: "Customer Excellence",
-    text: "We believe that a happy customer is the best way to succeed",
-    img: "/img/customer-experience.svg",
-  },
-  {
-    title: "Teamwork",
-    text: "We believe that everyone contributes to the worth of others",
-    img: "/img/teamwork.svg",
-  },
-  {
-    title: "Integrity",
-    text: "We believe in succeeding with integrity",
-    img: "/img/integrity.svg",
-  },
-  {
-    title: "Agility",
-    text: "We believe in agility to drive change",
-    img: "/img/agility.svg",
-  },
-];
-
-const executiveTeam = [
-  {
-    name: "Abdullah Al Sabban",
-    position: "Chief Operations Officer",
-    img: "/img/Panda-Exec7079-Edit-scaled.jpg",
-  },
-  {
-    name: "Eric Deliers",
-    position: "Chief Commercial Officer",
-    img: "/img/Panda-Exec7020-Edit-scaled.jpg",
-  },
-  {
-    name: "Ryyan Tarabzoni",
-    position: "Chief Supply Chain Officer & CEO Advisor",
-    img: "/img/Panda-Exec7504-Edit-scaled.jpg",
-  },
-  {
-    name: "Ahmed Chehade",
-    position: "Chief Marketing Officer",
-    img: "/img/Panda-Exec7118-Edit-scaled.jpg",
-  },
-  {
-    name: "Fouad Reda",
-    position: "Chief Business Support Officer",
-    img: "/img/Fouad-Reda-scaled.jpg",
-  },
-  {
-    name: "Mohammed Khorshid",
-    position: "Chief Financial Officer",
-    img: "/img/Panda-Exec7594-Edit-scaled.jpg",
-  },
-  {
-    name: "Piyush Chowhan",
-    position: "Chief Digital Officer",
-    img: "/img/Panda-Exec7613-Edit-scaled.jpg",
-  },
-  {
-    name: "Wassim Al Tahawi",
-    position: "Chief Governance, Risk, and Compliance Officer",
-    img: "/img/Panda-Exec7246-Edit-scaled.jpg",
-  },
-  {
-    name: "Majid Basha",
-    position: "Chief of Staff",
-    img: "/img/Panda-Exec7332-Edit-scaled.jpg",
-  },
-  {
-    name: "Hicham Aouda",
-    position: "CEO Advisor for Business Development",
-    img: "/img/MicrosoftTeams-image-1-1-scaled.jpg",
-  },
-  {
-    name: "Bandar Al Saidi",
-    position: "Vice President for Commercial Food",
-    img: "/img/Bandar-alsaedi-Picture-scaled.jpg",
-  },
-  {
-    name: "Hisham BaEissa",
-    position: "Director of Board Governance & Secretary",
-    img: "/img/Panda-Exec7383-Edit-scaled.jpg",
-  },
-];
 const LeadershipPage = () => {
   const { t } = useTranslation();
   const [ceoImg, setCeoImg] = useState("/img/CEO-scaled.jpg");
@@ -242,48 +154,7 @@ const LeadershipPage = () => {
             </div>
           </div>
         </div>
-        <div className="home-section-8 position-relative d-flex flex-column align-items-center row-gap-2 text-success w-100">
-          <div className="title text-success">{t("Our Values")}</div>
-          <div className="text text-black">
-            {t(
-              "Our values are who we are, where we come from and our values inspire us."
-            )}
-          </div>
-          <div className="mt-4 mb-5">
-            {/* <InteractiveBtn
-              color="#70bc1f"
-              reverseColor="white"
-              text="WATCH NOW"
-              url="/"
-            /> */}
-          </div>
-          <div className="value-cards-container d-flex justify-content-center align-items-center row-gap-3 flex-wrap">
-            {pandaValueCardsData.map((pandaValueCard, i) => (
-              <div
-                key={`panda-value-card-${i}-`}
-                style={{ boxSizing: "border-box" }}
-              >
-                <ValueCard
-                  text={pandaValueCard.text}
-                  title={pandaValueCard.title}
-                  img={pandaValueCard.img}
-                />
-              </div>
-            ))}
-          </div>
-          <img
-            src="/img/values_top_bg.svg"
-            alt=""
-            className="d-none d-lg-block position-absolute top-0"
-            style={{ left: 0 }}
-          />
-          <img
-            src="/img/values_bottom_bg.svg"
-            alt=""
-            className="d-none d-lg-block position-absolute right-0 bottom-0"
-            style={{ right: 0 }}
-          />
-        </div>
+        <OurValuesSection />
       </>
     </MainTemp>
   );

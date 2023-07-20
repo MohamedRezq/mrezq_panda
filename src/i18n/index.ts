@@ -148,6 +148,35 @@ const resources = {
       "Director of Board Governance & Secretary": "مدير الحوكمة وأمين السر",
       "Executive Team": "الفريق التنفيذي",
       "Copyright © 2021 Panda. All rights reserved.": "حقوق",
+      "About - Panda": "عن - باندا",
+      "Our executive team of experienced retail experts is backed by a strongly motivated, diverse group of managers and staff dedicated to creating a competitive customer value proposition.":
+        "يتم دعم فريقنا التنفيذي من خبراء البيع بالتجزئة ذوي الخبرة من قبل مجموعة متنوعة ومتنوعة من المديرين والموظفين الذين يكرسون جهودهم لإنشاء عرض قيمة تنافسية للعملاء.",
+      "Our highly seasoned and talented senior management team, with an average of nearly 30 years of retail industry experience, provides strong leadership to focus on our company’s overall growth and community partnership goals.":
+        "يوفر فريق الإدارة العليا المتمرس والموهوب لدينا ، والذي يتمتع بمتوسط ما يقرب من 30 عامًا من الخبرة في مجال تجارة التجزئة ، قيادة قوية للتركيز على النمو الشامل لشركتنا وأهداف الشراكة المجتمعية.",
+      "Seasoned Leadership Team Driving Panda success":
+        "فريق قيادة متمرس يقود نجاح الباندا",
+      "Distribution fleet of trucks with 4 main distribution centers across the Kingdom":
+        "أسطول توزيع من الشاحنات مع 4 مراكز توزيع رئيسية في جميع أنحاء المملكة",
+      "SKUs of products displayed at our stores":
+        "وحدات SKU للمنتجات المعروضة في متاجرنا",
+      "Stores across the Kingdom (Excluding Jamjom and Egypt)":
+        "المتاجر في جميع أنحاء المملكة (باستثناء جمجوم ومصر)",
+      "Employees work with dedication and commitment":
+        "يعمل الموظفون بتفان والتزام",
+      "Customer shopping at our stores every year":
+        "العملاء يتسوقون في متاجرنا كل عام",
+      "Sales across all our stores (2021)": "المبيعات في جميع متاجرنا (2021)",
+      "Headquartered in the Kingdom of Saudi Arabia, Panda Retail Company is one of the main retail chain businesses in the Middle East and the biggest grocery retailer in the country with more than 188 stores in 40 cities.":
+        "يقع المقر الرئيسي لشركة بنده للتجزئة في المملكة العربية السعودية ، وهي واحدة من شركات سلسلة البيع بالتجزئة الرئيسية في الشرق الأوسط وأكبر متاجر البقالة بالتجزئة في البلاد مع أكثر من 188 متجرًا في 40 مدينة",
+      "Panda operates 2 type of stores, Hyper Panda (larger stores) and Panda Supermarkets.":
+        "تدير Panda نوعين من المتاجر ، Hyper Panda (متاجر أكبر) و Panda Supermarkets",
+      "With more than 100 million customers visiting our stores every year, we operate 4 main distribution centers in the country with a fleet of more than 600 trucks to deliver 30,000 SKUs of food and non-food products to our stores.":
+        "مع أكثر من 100 مليون عميل يزورون متاجرنا كل عام ، نقوم بتشغيل 4 مراكز توزيع رئيسية في الدولة بأسطول يتألف من أكثر من 600 شاحنة لتوصيل 30،000 SKU من المنتجات الغذائية وغير الغذائية إلى متاجرنا",
+      "Since 2009, Panda has also introduced more than 400 private label products to serve our customers as a trusted retailer of choice in a number of food and non-food categories.":
+        "منذ عام 2009 ، قدمت Panda أيضًا أكثر من 400 من منتجات العلامات التجارية الخاصة لخدمة عملائنا كبائع تجزئة موثوق به في عدد من الفئات الغذائية وغير الغذائية",
+      "Over 17,000 employees work with dedication and commitment that is second to none in order to cater to the shopping needs of our customers.":
+        "يعمل أكثر من 17000 موظف بتفان والتزام لا يعلى عليه من أجل تلبية احتياجات التسوق لعملائنا",
+      "What we do": "الذي نفعله",
     },
   },
 };

@@ -4,38 +4,10 @@ import { useTranslation } from "react-i18next";
 import MainTemp from "../../components/templates/MainTemp";
 // import { InteractiveBtn } from "../../components/atoms/Button";
 import { BrandCardCarousel } from "../../components/molecules/Carousels";
-import { ValueCard } from "../../components/atoms/Cards";
 import { YoutubePlayer } from "../../components/atoms/Players";
+import { OurValuesSection } from "../../components/organisms";
 //----------------------------------------------------------------------------//
 //----------------------------------------------------------------------------//
-
-const pandaValueCardsData = [
-  {
-    title: "Ownership",
-    text: "We believe ownership with passion are the fuel of excellence",
-    img: "/img/ownership.svg",
-  },
-  {
-    title: "Customer Excellence",
-    text: "We believe that a happy customer is the best way to succeed",
-    img: "/img/customer-experience.svg",
-  },
-  {
-    title: "Teamwork",
-    text: "We believe that everyone contributes to the worth of others",
-    img: "/img/teamwork.svg",
-  },
-  {
-    title: "Integrity",
-    text: "We believe in succeeding with integrity",
-    img: "/img/integrity.svg",
-  },
-  {
-    title: "Agility",
-    text: "We believe in agility to drive change",
-    img: "/img/agility.svg",
-  },
-];
 
 const Home = () => {
   const { t } = useTranslation();
@@ -225,48 +197,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="home-section-8 position-relative d-flex flex-column align-items-center row-gap-2 text-success w-100">
-          <div className="title text-success">{t("Our Values")}</div>
-          <div className="text text-black">
-            {t(
-              "Our values are who we are, where we come from and our values inspire us."
-            )}
-          </div>
-          <div className="mt-4 mb-5">
-            {/* <InteractiveBtn
-              color="#70bc1f"
-              reverseColor="white"
-              text="WATCH NOW"
-              url="/"
-            /> */}
-          </div>
-          <div className="value-cards-container d-flex justify-content-center align-items-center row-gap-3 flex-wrap">
-            {pandaValueCardsData.map((pandaValueCard, i) => (
-              <div
-                key={`panda-value-card-${i}-`}
-                style={{ boxSizing: "border-box" }}
-              >
-                <ValueCard
-                  text={pandaValueCard.text}
-                  title={pandaValueCard.title}
-                  img={pandaValueCard.img}
-                />
-              </div>
-            ))}
-          </div>
-          <img
-            src="/img/values_top_bg.svg"
-            alt=""
-            className="d-none d-lg-block position-absolute top-0"
-            style={{ left: 0 }}
-          />
-          <img
-            src="/img/values_bottom_bg.svg"
-            alt=""
-            className="d-none d-lg-block position-absolute right-0 bottom-0"
-            style={{ right: 0 }}
-          />
-        </div>
+        <OurValuesSection />
       </>
     </MainTemp>
   );
