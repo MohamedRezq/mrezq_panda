@@ -5,7 +5,11 @@ import MainTemp from "../../components/templates/MainTemp";
 // import { InteractiveBtn } from "../../components/atoms/Button";
 import { BrandCardCarousel } from "../../components/molecules/Carousels";
 import { YoutubePlayer } from "../../components/atoms/Players";
-import { OurValuesSection } from "../../components/organisms";
+import {
+  CareerContactSection,
+  OurValuesSection,
+  TimelineSection,
+} from "../../components/organisms";
 //----------------------------------------------------------------------------//
 //----------------------------------------------------------------------------//
 
@@ -144,6 +148,8 @@ const Home = () => {
             <img src="/img/social-resp.PNG" alt="panda-social" />
           </div>
         </div>
+        <TimelineSection />
+        <CareerContactSection />
         <div className="home-section-7 multi-lingual d-flex flex-column-reverse flex-md-row justify-content-center align-items-strecth">
           <div className="position-relative youtube-wrapper">
             <YoutubePlayer />

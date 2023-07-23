@@ -6,3 +6,5 @@ export { OurVisionOurMissionSection } from "./OurVisionOurMissionSection";
 export { InfographSection } from "./InfographSection";
 export { StatsSection } from "./StatsSection";
 export { OurBrandsSection } from "./OurBrandsSection";
+export { TimelineSection } from "./TimelineSection";
+export { CareerContactSection } from "./CareerContactSection";

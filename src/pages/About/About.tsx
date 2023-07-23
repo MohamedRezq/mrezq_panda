@@ -11,6 +11,7 @@ import {
   OurValuesSection,
   OurVisionOurMissionSection,
   StatsSection,
+  TimelineSection,
 } from "../../components/organisms";
 //----------------------------------------------------------------------------//
 //----------------------------------------------------------------------------//
@@ -59,6 +60,7 @@ const AboutPage = () => {
             <img src="/img/our-vision-leadership.jpg" alt="Our Vision" />
           }
         />
+        <TimelineSection />
         <OurValuesSection />
         <OurBrandsSection />
         <InfographSection

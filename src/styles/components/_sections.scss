@@ -228,3 +228,32 @@
     width: fit-content;
   }
 }
+
+.timeline-section {
+  .timeline-sheet {
+    .timeline-sheet-number {
+      font-size: 36pt !important;
+      font-weight: 600 !important;
+    }
+    .timeline-sheet-text {
+      font-size: 24pt !important;
+      white-space: "nowrap" !important;
+    }
+    margin-top: 130px !important;
+    color: #fec828 !important;
+  }
+  @media (max-width: "768px") {
+    .timeline-sheet {
+      .timeline-sheet-number {
+        font-size: 24pt !important;
+        font-weight: 600 !important;
+      }
+      .timeline-sheet-text {
+        font-size: 18pt !important;
+        white-space: "nowrap" !important;
+      }
+      margin-top: 130px !important;
+      color: #fec828 !important;
+    }
+  }
+}

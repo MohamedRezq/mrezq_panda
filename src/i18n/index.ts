@@ -177,6 +177,19 @@ const resources = {
       "Over 17,000 employees work with dedication and commitment that is second to none in order to cater to the shopping needs of our customers.":
         "يعمل أكثر من 17000 موظف بتفان والتزام لا يعلى عليه من أجل تلبية احتياجات التسوق لعملائنا",
       "What we do": "الذي نفعله",
+      "Million transactions": "مليون معاملة",
+      "Achieved over 100+ million transactions through Panda chain of Hypermarkets and Supermarkets.":
+        "بندا أنجزت أكثر من 100 مليون معاملة من خلال سلسلة من الهايبر ماركت والسوبر ماركت",
+      "Our history of steady growth": "تاريخنا في النمو المطرد",
+      Explore: "إستكشف",
+      "Working with Panda": "العمل مع بندا",
+      "We create an integrated work environment for you.":
+        "نخلق لك بيئة عمل متكاملة",
+      "Learn More": "إستكشف المزيد",
+      "Partnering with Panda": "الشراكة مع بندا",
+      "Please get in touch with the team if you have an enquiry.":
+        "يرجى التواصل مع الفريق إذا كان لديك أي استفسار",
+      "Contact Us": "اتصل بنا",
     },
   },
 };
