@@ -21,9 +21,9 @@ const OurAwardsSection = () => {
               <Accordion.Header className="award-year w-100 text-primary">
                 {t(awardsByYear.year)}
               </Accordion.Header>
-              <Accordion.Body className="year-awards d-flex flex-column row-gap-4">
+              <Accordion.Body className="year-awards multi-lingual d-flex flex-column row-gap-4">
                 {awardsByYear.yearAwards.map((award) => (
-                  <div className="year-awards d-flex align-items-start column-gap-5">
+                  <div className="year-awards multi-lingual d-flex align-items-start column-gap-5">
                     <div className="award-icon">
                       <img src="/img/award.svg" alt="award" />
                     </div>
@@ -34,7 +34,7 @@ const OurAwardsSection = () => {
                             key={`quoted-text-${text.text}`}
                             className="quoted-text text-success"
                           >
-                            "{t(text.text)}"{" "}
+                            {t(text.text)}{" "}
                           </span>
                         ) : (
                           <span key={`unquoted-text-${text.text}`}>
@@ -73,11 +73,11 @@ const OurAwardsSection = () => {
                           key={`quoted-text-${text.text}`}
                           className="quoted-text text-success"
                         >
-                          "{text.text}"{" "}
+                          {t(text.text)}{" "}
                         </span>
                       ) : (
                         <span key={`unquoted-text-${text.text}`}>
-                          {text.text}{" "}
+                          {t(text.text)}{" "}
                         </span>
                       )
                     )}

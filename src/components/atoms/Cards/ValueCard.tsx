@@ -11,11 +11,11 @@ const ValueCard = (props: ValueCardProps) => {
   const { t } = useTranslation();
   return (
     <div className="value-card text-primary">
-      <div className="img-wrapper">
+      <div className="img-wrapper text-center">
         <img src={props.img} alt={props.text} />
       </div>
       <div className="title text-success">{t(props.title)}</div>
-      <div className="text text-dark">{t(props.text)}</div>
+      <div className="text text-dark text-center">{t(props.text)}</div>
     </div>
   );
 };

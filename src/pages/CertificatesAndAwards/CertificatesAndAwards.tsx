@@ -57,7 +57,7 @@ const CertificatesAndAwards = () => {
             cornerText: "Our History",
             title: "Began in the heart of Riyadh",
             text: "Beginnings in the heart of Riyadh Panda started from a small store in Riyadh and grew to become the largest retailer in Saudi Arabia.",
-            learnMoreLink: `${location.pathname.split("/")[1]}/our-history`,
+            learnMoreLink: `/${location.pathname.split("/")[1]}/our-history`,
           }}
           bgColor="white"
         />

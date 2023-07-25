@@ -455,7 +455,7 @@ export const awards = [
           },
           {
             quoted: false,
-            text: "Ministry of Labor & Social Development awarded Panda its Gold standard Mowaamah Certificate. This was in recognition for its long-standing commitment as a disability friendly organization and for its programs and initiatives in relation to the employment of people with disabilities in the Kingdom.",
+            text: "Ministry of Labor & Social Development awarded Panda its Gold standard Mowaamah Certificate. This was in recognition for its long-standing commitment as a disability friendly organization and for its programs and initiatives in relation to the employment of people with disabilities in the Kingdom",
           },
         ],
       },
@@ -467,7 +467,7 @@ export const awards = [
           },
           {
             quoted: false,
-            text: "His Highness Prince of Al-Qassim Region and His Excellency Minister of Labor & Social Development recognized Panda Retail Company with the Saudization Award for realizing 60% Saudization of staff in the Company’s stores across Al-Qassim Region.",
+            text: "His Highness Prince of Al-Qassim Region and His Excellency Minister of Labor & Social Development recognized Panda Retail Company with the Saudization Award for realizing 60% Saudization of staff in the Company’s stores across Al-Qassim Region",
           },
         ],
       },

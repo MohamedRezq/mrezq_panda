@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import i18n from "i18next";
-//-----> Pages <-------------------------------------------------//
+//-----> Pages <--------------------------------------------------------------//
 import {
   HomePage,
   LeadershipPage,
@@ -9,11 +9,23 @@ import {
   CertificatesAndAwards,
   Contact,
 } from "./pages";
-//- END OF IMPORTS -----------------------------------------//
+//- END OF IMPORTS ----------------------------------------------------------//
 
 function App() {
   const location = useLocation();
   const pageRef: any = useRef(null);
+  //-----> Initial Load <----------------------------------------------------//
+  useEffect(() => {
+    if (pageRef.current) {
+      pageRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    const langDetector = location.pathname.split("/")[1]; // "en" || "ar"
+    document
+      .getElementsByTagName("html")[0]
+      .setAttribute("lang", langDetector || "en");
+    i18n.changeLanguage(langDetector);
+  }, []);
+  //-----> On Url Change <---------------------------------------------------//
   useEffect(() => {
     if (pageRef.current) {
       pageRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -24,7 +36,9 @@ function App() {
       .setAttribute("lang", langDetector || "en");
     i18n.changeLanguage(langDetector);
   }, [location]);
-
+  //-------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------//
   return (
     <div ref={pageRef} className="App">
       <Routes>

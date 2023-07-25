@@ -2,19 +2,38 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { LogoWrapper } from "../../atoms";
 import FooterLinksCol from "./FooterLinksCol";
-import FooterLangSelector from "./FooterLangSelector";
-import { useLocation } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
+  //-----------------------------------------------------------------//
   const [pandaLang, setPandaLang] = React.useState(
-    location.pathname.split("/")[1]
+    document.getElementsByTagName("html")[0].getAttribute("lang")
   );
+  //-----------------------------------------------------------------//
+  const handleLangSwitcher = (e: any, lang: string) => {
+    e.preventDefault();
+    setPandaLang(lang);
+    // sessionStorage.setItem("panda_lang", lang);
+    const langDetector = location.pathname.split("/")[1];
+    if (langDetector === "en" || langDetector === "ar")
+      navigate(`/${lang}${location.pathname.slice(3)}`);
+    else navigate(`/${lang}${location.pathname}`);
+  };
+  //-----------------------------------------------------------------//
   React.useEffect(() => {
-    setPandaLang(location.pathname.split("/")[1]);
-  }, []);
-
+    const langDetector = location.pathname.split("/")[1]; // "en" || "ar"
+    if (langDetector) {
+      setPandaLang(langDetector);
+    } else {
+      setPandaLang("en");
+      // sessionStorage.setItem("panda_lang", "en");
+    }
+  }, [location]);
+  //-----------------------------------------------------------------//
   return (
     <div className="multi-lingual">
       <div className="footer border-success">
@@ -63,7 +82,20 @@ const Footer = () => {
             title={t("SHOP WITH US")}
             links={[{ text: t("Panda App"), url: "https://go.panda.sa/app" }]}
           />
-          <FooterLangSelector />
+          <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+              {pandaLang === "en" ? "English" : "العربية"}
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item onClick={(e) => handleLangSwitcher(e, "ar")}>
+                العربية
+              </Dropdown.Item>
+              <Dropdown.Item onClick={(e) => handleLangSwitcher(e, "en")}>
+                English
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </div>
       </div>
       <div className="py-3 d-flex justify-content-center align-items-center bg-primary text-white">

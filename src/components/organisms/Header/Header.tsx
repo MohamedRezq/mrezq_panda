@@ -21,25 +21,29 @@ const Header = () => {
     setIsOpen((prevState) => !prevState);
   };
   //-----------------------------------------------------------------//
-  const [pandaLang, setPandaLang] = useState(location.pathname.split("/")[1]);
+  const [pandaLang, setPandaLang] = useState(
+    document.getElementsByTagName("html")[0].getAttribute("lang")
+  );
+  //-----------------------------------------------------------------//
   const handleLangSwitcher = (e: any, lang: string) => {
     e.preventDefault();
     setPandaLang(lang);
-    sessionStorage.setItem("panda_lang", lang);
+    // sessionStorage.setItem("panda_lang", lang);
     const langDetector = location.pathname.split("/")[1];
     if (langDetector === "en" || langDetector === "ar")
       navigate(`/${lang}${location.pathname.slice(3)}`);
     else navigate(`/${lang}${location.pathname}`);
   };
+  //-----------------------------------------------------------------//
   useEffect(() => {
-    const lang = sessionStorage.getItem("panda_lang");
-    if (lang) {
-      setPandaLang(lang);
+    const langDetector = location.pathname.split("/")[1]; // "en" || "ar"
+    if (langDetector) {
+      setPandaLang(langDetector);
     } else {
       setPandaLang("en");
-      sessionStorage.setItem("panda_lang", "en");
+      // sessionStorage.setItem("panda_lang", "en");
     }
-  }, []);
+  }, [location]);
   //-----------------------------------------------------------------//
   return (
     <>
@@ -50,17 +54,13 @@ const Header = () => {
             <div className="d-flex gap-3 align-items-center langSwitcher">
               <div
                 onClick={(e) => handleLangSwitcher(e, "ar")}
-                className={`${
-                  location.pathname.split("/")[1] === "ar" && "active"
-                }`}
+                className={`${pandaLang === "ar" && "active"}`}
               >
                 العربية
               </div>
               <div
                 onClick={(e) => handleLangSwitcher(e, "en")}
-                className={`${
-                  location.pathname.split("/")[1] === "en" && "active"
-                }`}
+                className={`${pandaLang === "en" && "active"}`}
               >
                 English
               </div>
