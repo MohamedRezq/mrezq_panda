@@ -114,14 +114,14 @@ const Header = () => {
           }
           elem2={<img src="/img/menu-social-responsibility1.jpg" />}
           isOverLay={true}
-        />
-        <OverlayBtn
-          btnText="CONTACT"
-          btnLink="/contact"
-          elem1={<></>}
-          elem2={<></>}
-          isOverLay={false}
         /> */}
+          <OverlayBtn
+            btnText="CONTACT"
+            btnLink={`/${pandaLang}/contact`}
+            elem1={<></>}
+            elem2={<></>}
+            isOverLay={false}
+          />
           <OverlayBtn
             btnText={t("SHOP WITH US")}
             btnLink="https://panda.com.sa/en/"

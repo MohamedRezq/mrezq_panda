@@ -49,7 +49,7 @@ const resources = {
         "تأسست بنده عام ۱۹۷۸ وسرعان ما رسخت مكانتها كواحدة من المؤسسات الرائدة في قطاع التجزئة في المملكة العربية السعودية. في عام ۱۹۹٤ اندمجت بنده مع شركة العزيزية لتصبح عزيزية بنده المتحدة. في وقت لاحق من عام ۱۹۹۸ ، تم الاستحواذ على الشركة من قبل مجموعة صافولا ، وهي شركة تجزئة رائدة متخصصة في المنتجات الغذائية وأحدثت ثورة في نموذج أعمالها على الفور",
       "Our Brands": "علاماتنا التجارية",
       "With a focus on higher quality, Panda introduced in 2009 a portfolio of private label products ranging from food, non-food to personal care, home care and beauty care products.":
-        "مع التركيز على الجودة العالية ،  في عام ۲۰۰۹ مجموعة من منتجات العلامات الخاصة التي تتراوح من المواد الغذائية وغير الغذائية إلى العناية الشخصية والعناية المنزلية ومنتجات العناية بالجمال.",
+        "مع التركيز على الجودة العالية ،  في عام ۲۰۰۹ مجموعة من منتجات العلامات الخاصة التي تتراوح من المواد الغذائية وغير الغذائية إلى العناية الشخصية والعناية المنزلية ومنتجات العناية بالجمال",
       "PERSONAL CARE": "رعاية شخصية",
       "BREAKFAST DIET & ORGANIC": "حمية الفطور والعضوية",
       BEVERAGES: "مشروبات",
@@ -87,7 +87,7 @@ const resources = {
       Panda: "بنده",
       "Leadership - Panda": "القيادة - بنده",
       "Our executive team of experienced retail experts is backed by a strongly motivated, diverse group of managers and staff dedicated to creating a competitive customer value proposition. Our highly seasoned and talented senior management team, with an average of nearly 30 years of retail industry experience, provides strong leadership to focus on our company’s overall growth and community partnership goals.":
-        "يتم دعم فريقنا التنفيذي المكون من خبراء التجزئة ذوي الخبرة من قبل مجموعة متنوعة ومتنوعة من المديرين والموظفين الذين يكرسون جهودهم لإنشاء عرض قيمة تنافسية للعملاء. يوفر فريق الإدارة العليا المتمرس والموهوب لدينا ، والذي يتمتع بمتوسط ما يقرب من 30 عامًا من الخبرة في مجال تجارة التجزئة ، قيادة قوية للتركيز على النمو الشامل لشركتنا وأهداف الشراكة المجتمعية.",
+        "يتم دعم فريقنا التنفيذي المكون من خبراء التجزئة ذوي الخبرة من قبل مجموعة متنوعة ومتنوعة من المديرين والموظفين الذين يكرسون جهودهم لإنشاء عرض قيمة تنافسية للعملاء. يوفر فريق الإدارة العليا المتمرس والموهوب لدينا ، والذي يتمتع بمتوسط ما يقرب من 30 عامًا من الخبرة في مجال تجارة التجزئة ، قيادة قوية للتركيز على النمو الشامل لشركتنا وأهداف الشراكة المجتمعية",
       "Panda Leadership Team": "فريق قيادة بنده",
       "Chief Executive Officer": "الرئيس التنفيذي",
       "Dr. Bander Hamooh": "د. بندر حموه",
@@ -121,9 +121,9 @@ const resources = {
       "Executive Team": "الفريق التنفيذي",
       "About - Panda": "عن - بنده",
       "Our executive team of experienced retail experts is backed by a strongly motivated, diverse group of managers and staff dedicated to creating a competitive customer value proposition.":
-        "يتم دعم فريقنا التنفيذي من خبراء البيع بالتجزئة ذوي الخبرة من قبل مجموعة متنوعة ومتنوعة من المديرين والموظفين الذين يكرسون جهودهم لإنشاء عرض قيمة تنافسية للعملاء.",
+        "يتم دعم فريقنا التنفيذي من خبراء البيع بالتجزئة ذوي الخبرة من قبل مجموعة متنوعة ومتنوعة من المديرين والموظفين الذين يكرسون جهودهم لإنشاء عرض قيمة تنافسية للعملاء",
       "Our highly seasoned and talented senior management team, with an average of nearly 30 years of retail industry experience, provides strong leadership to focus on our company’s overall growth and community partnership goals.":
-        "يوفر فريق الإدارة العليا المتمرس والموهوب لدينا ، والذي يتمتع بمتوسط ما يقرب من 30 عامًا من الخبرة في مجال تجارة التجزئة ، قيادة قوية للتركيز على النمو الشامل لشركتنا وأهداف الشراكة المجتمعية.",
+        "يوفر فريق الإدارة العليا المتمرس والموهوب لدينا ، والذي يتمتع بمتوسط ما يقرب من 30 عامًا من الخبرة في مجال تجارة التجزئة ، قيادة قوية للتركيز على النمو الشامل لشركتنا وأهداف الشراكة المجتمعية",
       "Seasoned Leadership Team Driving Panda success":
         "فريق قيادة متمرس يقود نجاح البنده",
       "Distribution fleet of trucks with 4 main distribution centers across the Kingdom":
@@ -288,6 +288,7 @@ const resources = {
       "600+": "أكثر من ٦۰۰",
       "188": "۱۸۸",
       "100+": "+۱۰۰",
+      WhatsApp: "واتساب",
     },
   },
 };

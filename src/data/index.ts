@@ -405,14 +405,6 @@ export const awards = [
           },
         ],
       },
-      {
-        awardText: [
-          {
-            quoted: false,
-            text: "by Arabian Business in Riyadh",
-          },
-        ],
-      },
     ],
   },
   {

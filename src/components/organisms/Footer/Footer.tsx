@@ -68,16 +68,29 @@ const Footer = () => {
               { text: t("Savola Corporate"), url: "https://www.savola.com/" },
             ]}
           />
-          {/* <FooterLinksCol
+          <FooterLinksCol
             title={t("FOLLOW US ON SOCIAL")}
             links={[
-              { text: t("Facebook"), url: "" },
-              { text: t("Instagram"), url: "" },
-              { text: t("YouTube"), url: "" },
-              { text: t("Twitter"), url: "" },
-              { text: t("LinkedIn"), url: "" },
+              {
+                text: t("Facebook"),
+                url: "https://www.facebook.com/PandaSaudi",
+              },
+              {
+                text: t("Instagram"),
+                url: "https://www.instagram.com/pandasaudi",
+              },
+              {
+                text: t("YouTube"),
+                url: "https://www.youtube.com/channel/UCoq-QkHplVvXm4i4DxPuCHw",
+              },
+              { text: t("Twitter"), url: "https://twitter.com/PandaSaudi" },
+              {
+                text: t("LinkedIn"),
+                url: "https://www.linkedin.com/company/azizia-panda-united-savola-group/",
+              },
+              { text: t("WhatsApp"), url: "https://wa.me/+966920027707" },
             ]}
-          /> */}
+          />
           <FooterLinksCol
             title={t("SHOP WITH US")}
             links={[{ text: t("Panda App"), url: "https://go.panda.sa/app" }]}

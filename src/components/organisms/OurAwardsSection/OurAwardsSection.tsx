@@ -56,7 +56,9 @@ const OurAwardsSection = () => {
             key={`award-${i}-${awardsByYear.year}`}
             className="d-none multi-lingual d-lg-flex column-gap-5"
           >
-            <div className="award-year text-primary">{awardsByYear.year}</div>
+            <div className="award-year text-primary">
+              {t(awardsByYear.year)}
+            </div>
             <div className="year-awards d-flex flex-column row-gap-4">
               {awardsByYear.yearAwards.map((award, i) => (
                 <div
