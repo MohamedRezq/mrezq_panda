@@ -112,9 +112,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-3 d-flex justify-content-center align-items-center bg-primary text-white">
-        {location.pathname.split("/")[1] === "en"
+        {pandaLang === "en"
           ? "Copyright © 2021 Panda. All rights reserved."
-          : "جميع حقوق النشر محفوظة باندا © 2021"}
+          : "جميع حقوق النشر محفوظة بنده © ۲۰۲۱"}
       </div>
     </div>
   );
