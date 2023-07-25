@@ -37,12 +37,7 @@ a {
 *:lang(ar) {
   font-family: "mono" !important;
   font-weight: 500;
-  // .accordion-button {
-  //   flex-direction: row-reverse;
-  //   div {
-  //     width: 100%;
-  //   }
-  // }
+  text-align: right !important;
 }
 
 .mobile-drawer .header,
@@ -78,6 +73,7 @@ a {
 @import "components/cards";
 @import "components/carousels";
 @import "components/sections";
+@import "components/inputs";
 //-----------------------------------------------------------------------------------//
 //-----------------------------------------------------------------------------------//
 

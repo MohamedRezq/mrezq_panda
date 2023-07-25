@@ -1,1 +1,1 @@
-export { default as OurVisionOurMissionSection } from "./OurVisionOurMissionSection";
+export { default as OurVisionOurMission } from "./OurVisionOurMissionSection";

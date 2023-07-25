@@ -16,7 +16,7 @@ import {
 //----------------------------------------------------------------------------//
 //----------------------------------------------------------------------------//
 
-const AboutPage = () => {
+const About = () => {
   const { t } = useTranslation();
   useEffect(() => {
     document.title = t("About - Panda");
@@ -95,4 +95,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;

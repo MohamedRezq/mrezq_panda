@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import { useTranslation } from "react-i18next";
 
@@ -12,14 +12,10 @@ type InteractiveBtnProps = {
 
 const InteractiveBtn = (props: InteractiveBtnProps) => {
   const { t } = useTranslation();
-  const [langDetector, setLangDetector] = React.useState(
-    document.getElementsByTagName("html")[0].getAttribute("lang")
-  );
+  const location = useLocation();
+  let langDetector;
   React.useEffect(() => {
-    const langDetector = document
-      .getElementsByTagName("html")[0]
-      .getAttribute("lang");
-    setLangDetector(langDetector);
+    langDetector = location.pathname.split("/")[1]; // "en" || "ar"
   }, []);
 
   const leaveStyle = {
@@ -46,9 +42,9 @@ const InteractiveBtn = (props: InteractiveBtnProps) => {
       onMouseLeave={handleMouseLeave}
       style={isHover ? hoverStyle : leaveStyle}
     >
-      {t(props.text)}
+      <div>{t(props.text)}</div>
       <div className="arrow-icon" style={{ paddingBottom: "2px" }}>
-        {langDetector === "en" ? (
+        {langDetector === "ar" ? (
           <HiArrowLongRight size={20} className="arrow-icon" />
         ) : (
           <HiArrowLongLeft size={20} className="arrow-icon" />

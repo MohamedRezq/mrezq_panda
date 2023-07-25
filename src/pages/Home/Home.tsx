@@ -6,7 +6,7 @@ import MainTemp from "../../components/templates/MainTemp";
 import { BrandCardCarousel } from "../../components/molecules/Carousels";
 import { YoutubePlayer } from "../../components/atoms/Players";
 import {
-  CareerContactSection,
+  DoubleCardSection,
   OurValuesSection,
   TimelineSection,
 } from "../../components/organisms";
@@ -149,7 +149,23 @@ const Home = () => {
           </div>
         </div>
         <TimelineSection />
-        <CareerContactSection />
+        <DoubleCardSection
+          firstCard={{
+            img: "/img/careers.jpg",
+            cornerText: "Careers",
+            title: "Working with Panda",
+            text: "We create an integrated work environment for you.",
+            learnMoreLink: "/careers",
+          }}
+          secondCard={{
+            img: "/img/contact-us-savola.png",
+            cornerText: "Contact Us",
+            title: "Partnering with Panda",
+            text: "Please get in touch with the team if you have an enquiry.",
+            learnMoreLink: "/contact",
+          }}
+          bgColor="white"
+        />
         <div className="home-section-7 multi-lingual d-flex flex-column-reverse flex-md-row justify-content-center align-items-strecth">
           <div className="position-relative youtube-wrapper">
             <YoutubePlayer />

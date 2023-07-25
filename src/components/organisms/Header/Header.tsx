@@ -21,26 +21,26 @@ const Header = () => {
     setIsOpen((prevState) => !prevState);
   };
   //-----------------------------------------------------------------//
-  const [pandaLang, setPandaLang] = useState("ar");
+  const [pandaLang, setPandaLang] = useState(location.pathname.split("/")[1]);
   const handleLangSwitcher = (e: any, lang: string) => {
     e.preventDefault();
     setPandaLang(lang);
-    localStorage.setItem("panda_lang", lang);
+    sessionStorage.setItem("panda_lang", lang);
     const langDetector = location.pathname.split("/")[1];
     if (langDetector === "en" || langDetector === "ar")
-      navigate(`/${pandaLang}${location.pathname.slice(3)}`);
-    else navigate(`/${pandaLang}${location.pathname}`);
+      navigate(`/${lang}${location.pathname.slice(3)}`);
+    else navigate(`/${lang}${location.pathname}`);
   };
   useEffect(() => {
-    const lang = localStorage.getItem("panda_lang");
+    const lang = sessionStorage.getItem("panda_lang");
     if (lang) {
       setPandaLang(lang);
     } else {
       setPandaLang("en");
-      localStorage.setItem("panda_lang", "en");
+      sessionStorage.setItem("panda_lang", "en");
     }
   }, []);
-
+  //-----------------------------------------------------------------//
   return (
     <>
       <header className="large-screen-header d-none d-lg-block">
@@ -49,14 +49,18 @@ const Header = () => {
           <div className="d-flex multi-lingual justify-content-center align-items-center gap-4">
             <div className="d-flex gap-3 align-items-center langSwitcher">
               <div
-                onClick={(e) => handleLangSwitcher(e, "en")}
-                className={`${pandaLang === "en" && "active"}`}
+                onClick={(e) => handleLangSwitcher(e, "ar")}
+                className={`${
+                  location.pathname.split("/")[1] === "ar" && "active"
+                }`}
               >
                 العربية
               </div>
               <div
-                onClick={(e) => handleLangSwitcher(e, "ar")}
-                className={`${pandaLang === "ar" && "active"}`}
+                onClick={(e) => handleLangSwitcher(e, "en")}
+                className={`${
+                  location.pathname.split("/")[1] === "en" && "active"
+                }`}
               >
                 English
               </div>
@@ -70,15 +74,21 @@ const Header = () => {
         >
           <OverlayBtn
             btnText="ABOUT PANDA"
-            btnLink="/about"
+            btnLink={`/${pandaLang}/about`}
             elem1={
               <FooterLinksCol
                 title={t("QUICK LINKS")}
                 links={[
                   // { text: t("Our History"), url: "" },
-                  { text: t("Leadership"), url: "/leadership" },
-                  // { text: t("Certificates and Awards"), url: "" },
-                  // { text: t("Savola Corporate"), url: "" },
+                  { text: t("Leadership"), url: `/${pandaLang}/leadership` },
+                  {
+                    text: t("Certificates and Awards"),
+                    url: `/${pandaLang}/certificates-and-awards`,
+                  },
+                  {
+                    text: t("Savola Corporate"),
+                    url: "https://www.savola.com/",
+                  },
                 ]}
               />
             }

@@ -9,7 +9,7 @@ const MainTemp = ({ children }: MainTempProps) => {
   return (
     <>
       <Header />
-      <main className="w-100 h-100 font-medium mb-5">
+      <main className="w-100 h-100 font-medium">
         {children !== undefined ? children : <></>}
       </main>
       <Footer />

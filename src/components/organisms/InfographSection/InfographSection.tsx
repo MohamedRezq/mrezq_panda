@@ -1,6 +1,5 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import { text } from "stream/consumers";
 
 type InfographSectionProps = {
   bgColor: string;
@@ -12,6 +11,7 @@ type InfographSectionProps = {
   subTitleColor: string;
   text: string[];
   textColor: string;
+  reverse?: boolean;
 };
 
 const InfographSection = (props: InfographSectionProps) => {
